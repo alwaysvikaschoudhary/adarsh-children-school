@@ -227,7 +227,7 @@ const Achievements = () => {
                   <div className="relative mb-6">
                     <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-yellow-400 shadow-2xl bg-white p-1">
                       <img
-                        src="/images/leadership/principal-suresh-yadav.png"
+                        src="/images/Members/principal.svg"
                         alt="Principal Preeti Shrivastava"
                         className="w-full h-full object-cover object-top rounded-full scale-110"
                         style={{ objectPosition: 'center 20%' }}

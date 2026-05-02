@@ -28,7 +28,7 @@ const TransportPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-sky-900 via-blue-800 to-indigo-900 text-white py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-sky-900 via-blue-800 to-indigo-900 text-white py-6 md:py-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: 'radial-gradient(circle at 40% 50%, white 1px, transparent 1px)',
           backgroundSize: '40px 40px',

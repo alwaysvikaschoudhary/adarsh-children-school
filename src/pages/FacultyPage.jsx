@@ -85,7 +85,7 @@ const FacultyPage = () => {
   return (
     <div>
       {/* Enhanced Hero Section */}
-      <section className="relative bg-gradient-to-br from-violet-900 via-purple-800 to-fuchsia-900 text-white py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-violet-900 via-purple-800 to-fuchsia-900 text-white py-6 md:py-8 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{

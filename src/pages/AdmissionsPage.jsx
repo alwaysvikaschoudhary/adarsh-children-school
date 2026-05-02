@@ -21,7 +21,7 @@ const AdmissionsPage = () => {
   return (
     <div>
       {/* Enhanced Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-900 via-teal-800 to-cyan-900 text-white py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-green-900 via-teal-800 to-cyan-900 text-white py-6 md:py-8 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div

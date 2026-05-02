@@ -42,7 +42,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <section id="about" className="py-10 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div
@@ -78,7 +78,7 @@ const About = () => {
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-accent-100 rounded-full blur-3xl opacity-50"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/leadership/director.png"
+                src="/images/Members/director.svg"
                 alt="School Director"
                 className="w-full h-96 object-cover"
                 style={{
