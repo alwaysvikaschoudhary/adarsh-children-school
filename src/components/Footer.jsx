@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebook,
   FaInstagram,
@@ -7,8 +7,8 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaArrowUp,
-  FaHeart
-} from 'react-icons/fa';
+  FaHeart,
+} from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,48 +18,50 @@ const Footer = () => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Campuses', href: '/campuses' },
-    { name: 'Facilities', href: '/facilities' },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Campuses", href: "/campuses" },
+    { name: "Facilities", href: "/facilities" },
   ];
 
   const importantLinks = [
-    { name: 'Achievements', href: '/achievements' },
-    { name: 'Admissions', href: '/admissions' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Events', href: '/events' },
-    { name: 'Faculty', href: '/faculty' },
-    { name: 'Contact Us', href: '/contact' },
+    { name: "Achievements", href: "/achievements" },
+    { name: "Admissions", href: "/admissions" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Events", href: "/events" },
+    { name: "Faculty", href: "/faculty" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   const socialLinks = [
     {
       icon: FaInstagram,
-      url: 'https://www.instagram.com/shree_krishna_publicudairamsar/',
-      color: 'hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-600 hover:to-orange-500',
-      bgColor: 'bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-orange-500/20',
+      url: "https://www.instagram.com/shree_krishna_publicudairamsar/",
+      color:
+        "hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-600 hover:to-orange-500",
+      bgColor:
+        "bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-orange-500/20",
       label: "Adarsh Children's Senior Secondary School Instagram",
-      badge: 'SKPS'
+      badge: "acs",
     },
     {
       icon: FaFacebook,
-      url: 'https://www.facebook.com/skpsudairamsar/',
-      color: 'hover:bg-blue-600',
-      bgColor: 'bg-blue-500/20',
-      label: 'Facebook'
+      url: "https://www.facebook.com/acsudairamsar/",
+      color: "hover:bg-blue-600",
+      bgColor: "bg-blue-500/20",
+      label: "Facebook",
     },
   ];
 
@@ -77,12 +79,15 @@ const Footer = () => {
                 className="w-16 h-16 object-contain"
               />
               <div>
-                <h3 className="text-xl font-bold">Adarsh Children's Senior Secondary School</h3>
+                <h3 className="text-xl font-bold">
+                  Adarsh Children's Senior Secondary School
+                </h3>
                 <p className="text-xs text-gray-500">Since 2012</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Quality education at Bhankrota. Nurturing young minds with values, excellence, and holistic development.
+              Quality education at Bhankrota. Nurturing young minds with values,
+              excellence, and holistic development.
             </p>
             <div className="space-y-3">
               <p className="text-xs text-gray-400 font-semibold">Follow Us:</p>
@@ -121,8 +126,13 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            <h4 className="text-lg font-bold mb-4 text-accent-300">Quick Links</h4>
+          <div
+            className="animate-fade-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            <h4 className="text-lg font-bold mb-4 text-accent-300">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -130,7 +140,9 @@ const Footer = () => {
                     to={link.href}
                     className="text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
-                    <span className="mr-2 text-accent-400 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    <span className="mr-2 text-accent-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                      →
+                    </span>
                     {link.name}
                   </Link>
                 </li>
@@ -139,8 +151,13 @@ const Footer = () => {
           </div>
 
           {/* Important Links */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <h4 className="text-lg font-bold mb-4 text-accent-300">Important Links</h4>
+          <div
+            className="animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            <h4 className="text-lg font-bold mb-4 text-accent-300">
+              Important Links
+            </h4>
             <ul className="space-y-2">
               {importantLinks.map((link, index) => (
                 <li key={index}>
@@ -148,7 +165,9 @@ const Footer = () => {
                     to={link.href}
                     className="text-gray-400 hover:text-white transition-colors flex items-center group"
                   >
-                    <span className="mr-2 text-accent-400 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    <span className="mr-2 text-accent-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                      →
+                    </span>
                     {link.name}
                   </Link>
                 </li>
@@ -157,17 +176,25 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <h4 className="text-lg font-bold mb-6 text-accent-300">Contact Us</h4>
+          <div
+            className="animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <h4 className="text-lg font-bold mb-6 text-accent-300">
+              Contact Us
+            </h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-accent-400 text-base flex-shrink-0 mt-1" />
                 <div className="text-gray-400 text-sm leading-relaxed">
                   <p className="font-semibold text-white mb-1">Our Location:</p>
-                  <p className="leading-relaxed">Adarsh Children's Sr. Sec. School, Near Radhika Marriage Garden, Bhankrota, Rajasthan 302026</p>
-                  <a 
-                    href="https://www.google.com/maps/place/Adarsh+childrens+sr.+Sec.+School/@26.8758898,75.6873726,17z/data=!3m1!4b1!4m6!3m5!1s0x396c4b10414390ef:0xba16854dc4280343!8m2!3d26.8758898!4d75.6873726!16s%2Fg%2F11t6yp80w_" 
-                    target="_blank" 
+                  <p className="leading-relaxed">
+                    Adarsh Children's Sr. Sec. School, Near Radhika Marriage
+                    Garden, Bhankrota, Rajasthan 302026
+                  </p>
+                  <a
+                    href="https://www.google.com/maps/place/Adarsh+childrens+sr.+Sec.+School/@26.8758898,75.6873726,17z/data=!3m1!4b1!4m6!3m5!1s0x396c4b10414390ef:0xba16854dc4280343!8m2!3d26.8758898!4d75.6873726!16s%2Fg%2F11t6yp80w_"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-accent-400 hover:text-white transition-colors mt-2 inline-block font-medium"
                   >
@@ -177,13 +204,19 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3">
                 <FaPhone className="text-accent-400 text-base flex-shrink-0 mt-0.5" />
-                <a href="tel:+918947097731" className="text-gray-400 hover:text-white transition text-sm leading-relaxed">
+                <a
+                  href="tel:+918947097731"
+                  className="text-gray-400 hover:text-white transition text-sm leading-relaxed"
+                >
                   8947097731
                 </a>
               </div>
               <div className="flex items-start gap-3">
                 <FaEnvelope className="text-accent-400 text-base flex-shrink-0 mt-0.5" />
-                <a href="mailto:adarshchildrenschool@gmail.com" className="text-gray-400 hover:text-white transition text-sm break-all leading-relaxed">
+                <a
+                  href="mailto:adarshchildrenschool@gmail.com"
+                  className="text-gray-400 hover:text-white transition text-sm break-all leading-relaxed"
+                >
                   adarshchildrenschool@gmail.com
                 </a>
               </div>
@@ -197,10 +230,12 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} Adarsh Children's Senior Secondary School. All rights reserved.
+              © {currentYear} Adarsh Children's Senior Secondary School. All
+              rights reserved.
             </div>
             <div className="text-gray-400 text-sm flex items-center">
-              Made with <FaHeart className="text-red-500 mx-2 animate-pulse" /> for Education
+              Made with <FaHeart className="text-red-500 mx-2 animate-pulse" />{" "}
+              for Education
             </div>
           </div>
         </div>

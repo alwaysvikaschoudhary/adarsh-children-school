@@ -9,7 +9,7 @@ const ContactPage = () => {
   return (
     <div>
       {/* Enhanced Hero Section */}
-      <section className="relative bg-gradient-to-br from-sky-900 via-blue-800 to-indigo-900 text-white pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-sky-900 via-blue-800 to-indigo-900 text-white py-16 md:py-24 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{

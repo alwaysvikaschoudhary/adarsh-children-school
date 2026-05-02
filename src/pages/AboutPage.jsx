@@ -22,7 +22,7 @@ const AboutPage = () => {
   return (
     <div>
       {/* Enhanced Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-primary-800 to-indigo-900 text-white pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-blue-900 via-primary-800 to-indigo-900 text-white py-16 md:py-24 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -34,14 +34,6 @@ const AboutPage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* School Logo */}
-            <div className="flex justify-center mb-6">
-              <img
-                src="/logo.png"
-                alt="SKPS Logo"
-                className="w-24 h-24 md:w-32 md:h-32 object-contain animate-float"
-              />
-            </div>
-
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               About <span className="text-yellow-400 text-glow">Adarsh Children's</span><br />
               Senior Secondary School

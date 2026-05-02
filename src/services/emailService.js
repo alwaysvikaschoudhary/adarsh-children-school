@@ -28,7 +28,7 @@ export const sendAdmissionEnquiry = async (formData) => {
       parent_name: formData.parentName,
       child_name: formData.childName,
       child_age: formData.childAge,
-      campus: formData.campus === 'skps' ? "Adarsh Children's Senior Secondary School" : "Adarsh Children's Early Years",
+      campus: formData.campus === 'acs' ? "Adarsh Children's Senior Secondary School" : "Adarsh Children's Early Years",
       phone: formData.phone,
       email: formData.email,
       message: formData.message || 'No additional message',
@@ -96,7 +96,7 @@ export const sendWhatsAppNotification = (formData, type = 'admission') => {
               `👤 Parent: ${formData.parentName}\n` +
               `👶 Child: ${formData.childName}\n` +
               `📅 Age: ${formData.childAge}\n` +
-              `🏫 Campus: ${formData.campus === 'skps' ? "Adarsh Children's PS" : "Adarsh Children's Early Years"}\n` +
+              `🏫 Campus: ${formData.campus === 'acs' ? "Adarsh Children's Senior Secondary School" : ""}\n` +
               `📞 Phone: ${formData.phone}\n` +
               `📧 Email: ${formData.email}\n` +
               `💬 Message: ${formData.message || 'N/A'}`;
