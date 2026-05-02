@@ -23,7 +23,7 @@ const EventsPage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Left Content */}
             <div className="text-center md:text-left animate-slide-in-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                 School <span className="text-pink-400">Events</span><br />
                 & Celebrations
               </h1>
@@ -109,8 +109,8 @@ const EventsPage = () => {
           </div>
 
           {/* Feature Banner */}
-          <div className="mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <div className="inline-flex flex-wrap items-center justify-center gap-4 bg-pink-400 text-gray-900 px-6 py-3 rounded-full font-bold shadow-lg">
+          <div className="mt-8 md:mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <div className="inline-flex flex-wrap items-center justify-center gap-2 md:gap-4 bg-pink-400 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-full font-bold shadow-lg text-sm md:text-base">
               <span>🎭 Cultural Events</span>
               <span className="hidden sm:inline">•</span>
               <span>🏆 Competitions</span>
@@ -136,8 +136,8 @@ const EventsPage = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary-800 mb-4">Past Events Highlights</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-800 mb-4">Past Events Highlights</h2>
+            <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
               Memorable moments from our recent celebrations
             </p>
           </div>

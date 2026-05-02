@@ -67,11 +67,11 @@ const Testimonials = () => {
               : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-800 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 mb-4">
             What <span className="gradient-text">Parents Say</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Hear from our satisfied parents about their experience with us
           </p>
         </div>
@@ -160,7 +160,7 @@ const Testimonials = () => {
             }`}
             style={{ transitionDelay: statsVisible ? "100ms" : "0ms" }}
           >
-            <div className="text-4xl font-bold text-primary-600 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">
               30000+
             </div>
             <div className="text-gray-600">Happy Students</div>
@@ -171,7 +171,7 @@ const Testimonials = () => {
             }`}
             style={{ transitionDelay: statsVisible ? "250ms" : "0ms" }}
           >
-            <div className="text-4xl font-bold text-primary-600 mb-2">
+            <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">
               3000+
             </div>
             <div className="text-gray-600">Satisfied Parents</div>
@@ -182,7 +182,7 @@ const Testimonials = () => {
             }`}
             style={{ transitionDelay: statsVisible ? "400ms" : "0ms" }}
           >
-            <div className="text-4xl font-bold text-primary-600 mb-2">95%+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">95%+</div>
             <div className="text-gray-600">Success Rate</div>
           </div>
           <div
@@ -191,7 +191,7 @@ const Testimonials = () => {
             }`}
             style={{ transitionDelay: statsVisible ? "550ms" : "0ms" }}
           >
-            <div className="text-4xl font-bold text-primary-600 mb-2">20+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">20+</div>
             <div className="text-gray-600">Years Experience</div>
           </div>
         </div>

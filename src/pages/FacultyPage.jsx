@@ -101,7 +101,7 @@ const FacultyPage = () => {
               ref={headerRef}
               className="text-center md:text-left"
             >
-              <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}>
                 Our <span className="text-fuchsia-400">Faculty</span><br />
                 Excellence in Teaching

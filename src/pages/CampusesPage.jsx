@@ -27,7 +27,7 @@ const CampusesPage = () => {
             <div className="text-center md:text-left animate-slide-in-left">
               
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                 Our <span className="text-emerald-400">Campuses</span><br />
                 Two Locations
               </h1>

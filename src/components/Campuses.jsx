@@ -32,11 +32,11 @@ const Campuses = () => {
           className={`text-center mb-16 transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-800 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 mb-4">
             Our <span className="gradient-text">Campuses</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             Two world-class campuses designed to provide the best learning environment for every age group
           </p>
         </div>
@@ -61,7 +61,7 @@ const Campuses = () => {
                   <img
                     src={campus.image}
                     alt={campus.name}
-                    className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-56 md:h-96 object-cover group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${campus.gradient} opacity-40 group-hover:opacity-30 transition-opacity`}></div>

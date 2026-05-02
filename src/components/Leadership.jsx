@@ -50,10 +50,10 @@ const Leadership = () => {
           className={`text-center mb-16 transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-800 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 dark:text-white mb-4">
             Our <span className="gradient-text">Leadership</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-2">
             Meet the visionary leaders driving excellence and innovation at Adarsh Children's Senior Secondary School
           </p>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mt-4"></div>
@@ -85,7 +85,7 @@ const Leadership = () => {
                   {/* Photo */}
                   <div className="flex justify-center mb-4">
                     <div className="relative">
-                      <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-white">
+                      <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-white">
                         <img
                           src={leader.image}
                           alt={leader.name}
@@ -109,13 +109,13 @@ const Leadership = () => {
 
                   {/* Name & Role */}
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold mb-1">{leader.name}</h3>
+                    <h3 className="text-xl md:text-2xl font-bold mb-1">{leader.name}</h3>
                     <p className="text-white/90 font-semibold">{leader.role}</p>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-8">
+                <div className="p-5 md:p-8">
                   {/* Award Info */}
                   <div className="mb-6">
                     <div className="flex items-center justify-center space-x-2 mb-2">
@@ -142,18 +142,18 @@ const Leadership = () => {
                   {/* Stats */}
                   <div className="grid grid-cols-3 gap-4 mt-6">
                     <div className="text-center">
-                      <FaTrophy className="text-2xl text-yellow-500 mx-auto mb-2" />
-                      <div className="text-lg font-bold text-gray-800 dark:text-white">30000+</div>
+                      <FaTrophy className="text-xl md:text-2xl text-yellow-500 mx-auto mb-2" />
+                      <div className="text-base md:text-lg font-bold text-gray-800 dark:text-white">30000+</div>
                       <div className="text-xs text-gray-600 dark:text-gray-400">Students</div>
                     </div>
                     <div className="text-center">
-                      <FaStar className="text-2xl text-blue-500 mx-auto mb-2" />
-                      <div className="text-lg font-bold text-gray-800 dark:text-white">3000+</div>
+                      <FaStar className="text-xl md:text-2xl text-blue-500 mx-auto mb-2" />
+                      <div className="text-base md:text-lg font-bold text-gray-800 dark:text-white">3000+</div>
                       <div className="text-xs text-gray-600 dark:text-gray-400">Parents</div>
                     </div>
                     <div className="text-center">
-                      <FaGraduationCap className="text-2xl text-green-500 mx-auto mb-2" />
-                      <div className="text-lg font-bold text-gray-800 dark:text-white">95%</div>
+                      <FaGraduationCap className="text-xl md:text-2xl text-green-500 mx-auto mb-2" />
+                      <div className="text-base md:text-lg font-bold text-gray-800 dark:text-white">95%</div>
                       <div className="text-xs text-gray-600 dark:text-gray-400">Success Rate</div>
                     </div>
                   </div>

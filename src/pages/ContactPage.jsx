@@ -22,7 +22,7 @@ const ContactPage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Left Content */}
             <div className="text-center md:text-left animate-slide-in-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                 Get In <span className="text-sky-400">Touch</span><br />
                 With Us
               </h1>

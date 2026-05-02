@@ -34,42 +34,42 @@ const AboutPage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* School Logo */}
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
               About <span className="text-yellow-400 text-glow">Adarsh Children's</span><br />
               Senior Secondary School
             </h1>
 
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base md:text-xl lg:text-2xl text-blue-100 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto px-2">
               A premier educational institution committed to providing quality education and nurturing future leaders since 2012
             </p>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-10 max-w-md mx-auto">
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400">12+</div>
-                <div className="text-sm text-blue-200 uppercase tracking-wider">Years</div>
+            <div className="grid grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10 max-w-md mx-auto">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
+                <div className="text-2xl md:text-4xl font-bold text-yellow-400">12+</div>
+                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">Years</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400">2500+</div>
-                <div className="text-sm text-blue-200 uppercase tracking-wider">Students</div>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
+                <div className="text-2xl md:text-4xl font-bold text-yellow-400">2500+</div>
+                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">Students</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-400">1000+</div>
-                <div className="text-sm text-blue-200 uppercase tracking-wider">Alumni</div>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
+                <div className="text-2xl md:text-4xl font-bold text-yellow-400">1000+</div>
+                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">Alumni</div>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4 sm:px-0">
               <a
                 href="#story"
-                className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-bold hover:bg-yellow-300 transition-all shadow-[0_0_20px_rgba(250,204,21,0.4)] hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] transform hover:scale-105"
+                className="bg-yellow-400 text-gray-900 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-yellow-300 transition-all shadow-[0_0_20px_rgba(250,204,21,0.4)] hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] transform hover:scale-105 text-center text-sm md:text-base"
               >
                 Our Story
               </a>
               <Link
                 to="/contact"
-                className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all"
+                className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-white/20 transition-all text-center text-sm md:text-base"
               >
                 Contact Us
               </Link>
@@ -77,10 +77,10 @@ const AboutPage = () => {
           </div>
 
           {/* Awards Banner */}
-          <div className="mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <div className="inline-flex flex-wrap items-center justify-center gap-3 bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-bold shadow-lg max-w-full mx-auto">
-              <FaTrophy className="text-xl flex-shrink-0" />
-              <span className="text-sm md:text-base">Best Principal Award 2024 • In Top 1000 Schools in India</span>
+          <div className="mt-8 md:mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <div className="inline-flex flex-wrap items-center justify-center gap-2 md:gap-3 bg-yellow-400 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-full font-bold shadow-lg max-w-full mx-auto">
+              <FaTrophy className="text-lg md:text-xl flex-shrink-0" />
+              <span className="text-xs md:text-base">Best Principal Award 2024 • In Top 1000 Schools in India</span>
             </div>
           </div>
         </div>

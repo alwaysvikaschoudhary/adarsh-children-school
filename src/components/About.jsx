@@ -52,13 +52,13 @@ const About = () => {
             : 'opacity-0 translate-y-10'
             }`}
         >
-          <h2 className={`text-4xl md:text-5xl font-bold text-primary-800 mb-4 transition-all duration-700 delay-100 ${headerVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+          <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 mb-4 transition-all duration-700 delay-100 ${headerVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
             }`}>
             About <span className="gradient-text">Adarsh Children's Senior Secondary School</span>
           </h2>
           <div className={`w-24 h-1 bg-gradient-accent mx-auto mb-6 transition-all duration-700 delay-300 ${headerVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
             }`}></div>
-          <p className={`text-xl text-gray-600 max-w-3xl mx-auto transition-all duration-700 delay-500 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+          <p className={`text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-2 transition-all duration-700 delay-500 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
             }`}>
             A premier educational institution committed to providing quality education and nurturing future leaders
           </p>
@@ -80,7 +80,7 @@ const About = () => {
               <img
                 src="/images/Members/director.svg"
                 alt="School Director"
-                className="w-full h-96 object-cover"
+                className="w-full h-64 md:h-96 object-cover"
                 style={{
                   objectPosition: 'center top',
                   transform: 'scale(1.0)'
@@ -89,9 +89,9 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-primary-900/50 to-transparent"></div>
             </div>
             {/* Floating card */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl animate-float">
-              <div className="text-4xl font-bold text-primary-600">20+</div>
-              <div className="text-gray-600 font-medium">Years of Excellence</div>
+            <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-white p-4 md:p-6 rounded-xl shadow-xl animate-float">
+              <div className="text-2xl md:text-4xl font-bold text-primary-600">20+</div>
+              <div className="text-gray-600 font-medium text-sm md:text-base">Years of Excellence</div>
             </div>
           </div>
 
@@ -117,7 +117,7 @@ const About = () => {
             </p>
 
             {/* Highlights Grid */}
-            <div className={`grid grid-cols-2 gap-3 mb-6 transition-all duration-700 delay-400 ${contentVisible ? 'opacity-100' : 'opacity-0'
+            <div className={`grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 transition-all duration-700 delay-400 ${contentVisible ? 'opacity-100' : 'opacity-0'
               }`}>
               {highlights.map((highlight, index) => (
                 <div key={index} className="flex items-start space-x-2">

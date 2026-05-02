@@ -152,7 +152,7 @@ const Admissions = () => {
               : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-800 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 mb-4">
             <span className="gradient-text">Admissions</span> Open 2026-27
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-6"></div>
@@ -172,7 +172,7 @@ const Admissions = () => {
           >
             Admission Process
           </h3>
-          <div className="grid md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {admissionSteps.map((step, index) => (
               <div
                 key={index}
@@ -187,8 +187,8 @@ const Admissions = () => {
                     : "0ms",
                 }}
               >
-                <div className="bg-white p-6 rounded-xl shadow-lg text-center card-hover">
-                  <div className="text-6xl font-bold text-primary-100 mb-2">
+                <div className="bg-white p-4 md:p-6 rounded-xl shadow-lg text-center card-hover">
+                  <div className="text-4xl md:text-6xl font-bold text-primary-100 mb-2">
                     {step.number}
                   </div>
                   <h4 className="text-lg font-bold text-gray-800 mb-2">
@@ -208,8 +208,8 @@ const Admissions = () => {
         </div>
 
         {/* Download Documents */}
-        <div className="bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl p-8 mb-16 text-white text-center shadow-2xl animate-scale-in">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+        <div className="bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl md:rounded-2xl p-6 md:p-8 mb-16 text-white text-center shadow-2xl animate-scale-in">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-white">
             Download Admission Documents
           </h3>
           <p className="mb-6 text-white">

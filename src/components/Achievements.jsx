@@ -391,13 +391,13 @@ const Achievements = () => {
           }`}
         >
           <div className="inline-block mb-4">
-            <FaTrophy className="text-6xl text-yellow-500 animate-bounce mx-auto" />
+            <FaTrophy className="text-4xl md:text-6xl text-yellow-500 animate-bounce mx-auto" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-800 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 dark:text-white mb-4">
             Our <span className="gradient-text">Achievements</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-2">
             Recognized In Top 1000 Schools by Indian Talent Olympiad
           </p>
         </div>
@@ -409,8 +409,8 @@ const Achievements = () => {
             awardVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`}
         >
-          <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 rounded-3xl p-1 shadow-2xl">
-            <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 rounded-2xl md:rounded-3xl p-1 shadow-2xl">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 {/* Text Content - Left Side */}
                 <div className="order-2 md:order-1 flex flex-col justify-center text-center md:text-left">

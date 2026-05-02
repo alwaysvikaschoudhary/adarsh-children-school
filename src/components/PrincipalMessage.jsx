@@ -17,7 +17,7 @@ const PrincipalMessage = () => {
             className={`text-center mb-12 transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-800 dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 dark:text-white mb-4">
               Principal's <span className="gradient-text">Message</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
@@ -39,7 +39,7 @@ const PrincipalMessage = () => {
 
                 <div className="text-center">
                   <div className="relative inline-block mb-4">
-                    <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-white">
+                    <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-white">
                       <img
                         src="/images/leadership/principal-suresh-yadav.png"
                         alt="Principal Preeti Shrivastava"
@@ -70,16 +70,16 @@ const PrincipalMessage = () => {
               </div>
 
               {/* Right - Message */}
-              <div className="md:col-span-3 p-8 md:p-12">
+              <div className="md:col-span-3 p-6 md:p-8 lg:p-12">
                 <div className="relative">
                   <FaQuoteLeft className="text-4xl text-primary-200 dark:text-primary-700 mb-4" />
 
                   <div className="space-y-4 text-gray-700 dark:text-gray-300">
-                    <p className="text-lg leading-relaxed">
+                    <p className="text-base md:text-lg leading-relaxed">
                       Dear Students and Parents,
                     </p>
 
-                    <p className="text-lg leading-relaxed">
+                    <p className="text-base md:text-lg leading-relaxed">
                       At <strong className="text-primary-600 dark:text-accent-400">Adarsh Children's Senior Secondary School</strong>, we believe that education is about values, discipline, and the future of every child. We focus not on profits, but on the principles that shape young lives.
                     </p>
 
@@ -107,23 +107,23 @@ const PrincipalMessage = () => {
           {/* Achievement Badges */}
           <div
             ref={badgesRef}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8"
+            className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-8"
           >
-            <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl p-4 text-center text-white shadow-lg overflow-hidden">
-              <div className="text-2xl sm:text-3xl font-bold mb-1 break-words">In Top 1000</div>
-              <div className="text-sm opacity-90">Schools in India</div>
+            <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl p-3 md:p-4 text-center text-white shadow-lg overflow-hidden">
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1 break-words">In Top 1000</div>
+              <div className="text-xs md:text-sm opacity-90">Schools in India</div>
             </div>
-            <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl p-4 text-center text-white shadow-lg">
-              <div className="text-3xl font-bold mb-1">30000+</div>
-              <div className="text-sm opacity-90">Happy Students</div>
+            <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl p-3 md:p-4 text-center text-white shadow-lg">
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">30000+</div>
+              <div className="text-xs md:text-sm opacity-90">Happy Students</div>
             </div>
-            <div className="bg-gradient-to-br from-red-400 to-red-600 rounded-xl p-4 text-center text-white shadow-lg">
-              <div className="text-3xl font-bold mb-1">3000+</div>
-              <div className="text-sm opacity-90">Satisfied Parents</div>
+            <div className="bg-gradient-to-br from-red-400 to-red-600 rounded-xl p-3 md:p-4 text-center text-white shadow-lg">
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">3000+</div>
+              <div className="text-xs md:text-sm opacity-90">Satisfied Parents</div>
             </div>
-            <div className="bg-gradient-to-br from-green-400 to-green-600 rounded-xl p-4 text-center text-white shadow-lg">
-              <div className="text-3xl font-bold mb-1">95%</div>
-              <div className="text-sm opacity-90">Success Rate</div>
+            <div className="bg-gradient-to-br from-green-400 to-green-600 rounded-xl p-3 md:p-4 text-center text-white shadow-lg">
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">95%</div>
+              <div className="text-xs md:text-sm opacity-90">Success Rate</div>
             </div>
           </div>
         </div>

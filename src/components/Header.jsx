@@ -65,7 +65,7 @@ const Header = () => {
       ]
     },
     {
-      name: 'Student Life',
+      name: 'Activities',
       dropdown: [
         { name: 'Events', href: '/events' },
         { name: 'Gallery', href: '/gallery' },
