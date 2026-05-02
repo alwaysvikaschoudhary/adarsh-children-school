@@ -66,11 +66,11 @@ body {
 }
 
 /* Custom gradient backgrounds */
-.gradient-primary {
+.gradient-primary, .bg-gradient-primary {
   background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
 }
 
-.gradient-accent {
+.gradient-accent, .bg-gradient-accent {
   background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
 }
 

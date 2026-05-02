@@ -235,7 +235,7 @@ const Admissions = () => {
           }`}
         >
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-            <div className="bg-gradient-primary p-8 text-white text-center">
+            <div className="gradient-primary p-8 text-white text-center">
               <h3 className="text-3xl font-bold mb-2">
                 Admission Enquiry Form
               </h3>

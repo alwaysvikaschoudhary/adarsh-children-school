@@ -161,14 +161,7 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex lg:hidden items-center space-x-4">
-            <Link
-              to="/admissions"
-              className="text-[10px] font-bold bg-primary-600 text-white px-3 py-2 rounded-lg uppercase tracking-tight"
-            >
-              Apply
-            </Link>
+          <div className="flex lg:hidden items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 p-2 hover:bg-gray-100 rounded-xl transition-colors"
