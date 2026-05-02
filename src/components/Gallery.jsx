@@ -14,48 +14,37 @@ const Gallery = () => {
   const [filter, setFilter] = useState('All');
 
   // Real school images
+  // Real school images from organized folders
   const galleryImages = [
-    { url: '/images/gallery/newsletter-1.png', title: 'The Education Times Page 1', category: 'Newsletter' },
-    { url: '/images/gallery/newsletter-2.png', title: 'The Education Times Page 2', category: 'Newsletter' },
-    { url: '/images/gallery/newsletter-3.png', title: 'The Education Times Page 3', category: 'Newsletter' },
-    { url: '/images/gallery/newsletter-4.png', title: 'The Education Times Page 4', category: 'Newsletter' },
-    { url: '/images/gallery/photo_2026-02-05 18.15.56.jpeg', title: 'School Campus', category: 'Campus' },
-    { url: '/images/gallery/photo_2026-02-05 18.17.23.jpeg', title: 'Students Learning', category: 'Academics' },
-    { url: '/images/gallery/photo_2026-02-05 18.28.27.jpeg', title: 'School Activities', category: 'Activities' },
-    { url: '/images/gallery/photo_2026-02-05 18.28.39.jpeg', title: 'Sports Event', category: 'Sports' },
-    { url: '/images/gallery/photo_2026-02-05 18.28.52.jpeg', title: 'Classroom', category: 'Academics' },
-    { url: '/images/gallery/photo_2026-02-05 18.28.58.jpeg', title: 'School Event', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.01.jpeg', title: 'Group Activity', category: 'Activities' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.05.jpeg', title: 'Annual Function', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.06.jpeg', title: 'Cultural Program', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.10.jpeg', title: 'School Facility', category: 'Facilities' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.13.jpeg', title: 'Students Together', category: 'Campus' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.14.jpeg', title: 'Learning Session', category: 'Academics' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.15.jpeg', title: 'School Grounds', category: 'Campus' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.17.jpeg', title: 'Activity Time', category: 'Activities' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.22.jpeg', title: 'Sports Day', category: 'Sports' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.25.jpeg', title: 'School Program', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.26.jpeg', title: 'Campus Life', category: 'Campus' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.29.jpeg', title: 'School Building', category: 'Facilities' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.30.jpeg', title: 'Students & Teachers', category: 'Academics' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.31.jpeg', title: 'School Event Day', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.33.jpeg', title: 'School Infrastructure', category: 'Facilities' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.34.jpeg', title: 'Campus View', category: 'Campus' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.40.jpeg', title: 'Group Photo', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.43.jpeg', title: 'School Assembly', category: 'Activities' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.44.jpeg', title: 'Educational Activity', category: 'Academics' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.45.jpeg', title: 'School Gathering', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.46.jpeg', title: 'Campus Building', category: 'Facilities' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.48.jpeg', title: 'School Celebration', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.50.jpeg', title: 'Learning Environment', category: 'Academics' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.52.jpeg', title: 'Sports Activity', category: 'Sports' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.54.jpeg', title: 'School Program', category: 'Events' },
-    { url: '/images/gallery/photo_2026-02-05 18.29.57.jpeg', title: 'Campus Area', category: 'Campus' },
-    { url: '/images/gallery/photo_2026-02-05 18.30.02.jpeg', title: 'Educational Event', category: 'Academics' },
-    { url: '/images/gallery/photo_2026-02-05 18.30.06.jpeg', title: 'School Activity', category: 'Activities' },
+    { url: "/images/Achievements/achievements_1.jpg", title: "Merit Award 2024", category: "Achievements" },
+    { url: "/images/Achievements/achievements_2.jpg", title: "State Level Sports Trophy", category: "Achievements" },
+    { url: "/images/Achievements/achievements_3.jpg", title: "Academic Excellence Award", category: "Achievements" },
+    { url: "/images/Achievements/achievements_4.jpg", title: "Science Fair Winner", category: "Achievements" },
+    { url: "/images/Achievements/achievements_5.jpg", title: "Cultural Achievement", category: "Achievements" },
+    { url: "/images/Activities/activities_1.jpg", title: "Morning Assembly", category: "Activities" },
+    { url: "/images/Activities/activities_2.jpg", title: "Yoga Session", category: "Activities" },
+    { url: "/images/Activities/activities_3.jpg", title: "Art & Craft Class", category: "Activities" },
+    { url: "/images/Activities/activities_4.jpg", title: "Science Lab Experiment", category: "Activities" },
+    { url: "/images/Activities/activities_5.jpg", title: "Computer Lab Session", category: "Activities" },
+    { url: "/images/Activities/activities_6.jpg", title: "Music Class", category: "Activities" },
+    { url: "/images/Campus/campus_1.jpg", title: "Main School Building", category: "Campus" },
+    { url: "/images/Campus/campus_2.jpg", title: "Lush Green Playground", category: "Campus" },
+    { url: "/images/Campus/campus_3.jpg", title: "Well-Equipped Library", category: "Campus" },
+    { url: "/images/Campus/campus_4.jpg", title: "Modern Classrooms", category: "Campus" },
+    { url: "/images/Campus/campus_5.jpg", title: "Auditorium", category: "Campus" },
+    { url: "/images/Events/events_1.jpg", title: "Annual Function Celebration", category: "Events" },
+    { url: "/images/Events/events_2.jpg", title: "Independence Day Celebration", category: "Events" },
+    { url: "/images/Events/events_3.jpg", title: "Teachers Day Program", category: "Events" },
+    { url: "/images/Events/events_4.jpg", title: "Cultural Fest", category: "Events" },
+    { url: "/images/Sports/sports_1.jpg", title: "Inter-School Cricket Match", category: "Sports" },
+    { url: "/images/Sports/sports_2.png", title: "Basketball Championship", category: "Sports" },
+    { url: "/images/Sports/sports_3.png", title: "Athletics Meet", category: "Sports" },
+    { url: "/images/Leaderboard/leaderboard_1.jpg", title: "Class 12th Topper", category: "Leaderboard" },
+    { url: "/images/Leaderboard/leaderboard_2.jpg", title: "Class 10th Topper", category: "Leaderboard" },
+    { url: "/images/Leaderboard/leaderboard_3.png", title: "Academic Achiever", category: "Leaderboard" },
   ];
 
-  const categories = ['All', 'Newsletter', 'Campus', 'Academics', 'Sports', 'Events', 'Activities', 'Facilities'];
+  const categories = ['All', 'Achievements', 'Activities', 'Campus', 'Events', 'Sports', 'Leaderboard'];
   const filteredImages = filter === 'All'
     ? galleryImages
     : galleryImages.filter(img => img.category === filter);
@@ -85,7 +74,7 @@ const Gallery = () => {
               key={cat}
               onClick={() => setFilter(cat)}
               className={`px-4 md:px-6 py-2 rounded-full text-sm md:text-base font-semibold transition-all ${filter === cat
-                ? 'bg-gradient-primary text-white shadow-lg scale-105'
+                ? 'gradient-primary text-white shadow-lg scale-105'
                 : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md'
                 }`}
             >
