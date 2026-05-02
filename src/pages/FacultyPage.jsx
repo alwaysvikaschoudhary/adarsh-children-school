@@ -311,24 +311,34 @@ const FacultyPage = () => {
       </section>
 
       {/* Staff Statistics */}
-      <section className="py-20 bg-gradient-primary text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
-            <div>
-              <div className="text-5xl font-bold mb-2">30+</div>
-              <div className="text-lg">Qualified Teachers</div>
+      <section className="py-24 bg-gradient-to-r from-primary-900 via-primary-800 to-indigo-900 text-white relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+          <div className="absolute top-10 left-10 w-32 h-32 rounded-full border-8 border-white"></div>
+          <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full border-8 border-white opacity-20"></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto text-center">
+            <div className="animate-scale-in">
+              <div className="text-5xl md:text-6xl font-black text-yellow-400 mb-3 tracking-tighter">30+</div>
+              <div className="text-lg md:text-xl font-bold text-white uppercase tracking-widest">Qualified</div>
+              <div className="text-sm text-blue-200">Educators</div>
             </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">15+</div>
-              <div className="text-lg">Years Avg. Experience</div>
+            <div className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
+              <div className="text-5xl md:text-6xl font-black text-yellow-400 mb-3 tracking-tighter">15+</div>
+              <div className="text-lg md:text-xl font-bold text-white uppercase tracking-widest">Years Avg.</div>
+              <div className="text-sm text-blue-200">Experience</div>
             </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">100%</div>
-              <div className="text-lg">Professional Training</div>
+            <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
+              <div className="text-5xl md:text-6xl font-black text-yellow-400 mb-3 tracking-tighter">100%</div>
+              <div className="text-lg md:text-xl font-bold text-white uppercase tracking-widest">Professional</div>
+              <div className="text-sm text-blue-200">Training</div>
             </div>
-            <div>
-              <div className="text-5xl font-bold mb-2">20+</div>
-              <div className="text-lg">Support Staff</div>
+            <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
+              <div className="text-5xl md:text-6xl font-black text-yellow-400 mb-3 tracking-tighter">20+</div>
+              <div className="text-lg md:text-xl font-bold text-white uppercase tracking-widest">Support</div>
+              <div className="text-sm text-blue-200">Staff</div>
             </div>
           </div>
         </div>

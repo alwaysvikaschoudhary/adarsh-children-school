@@ -19,8 +19,6 @@ import FacultyPage from './pages/FacultyPage';
 import ContactPage from './pages/ContactPage';
 import TransportPage from './pages/TransportPage';
 import AchievementsPage from './pages/AchievementsPage';
-import ShreeKrishnaBhankrotaPage from './pages/ShreeKrishnaBhankrotaPage';
-import LittleKrishnaJaipurPage from './pages/LittleKrishnaJaipurPage';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -49,10 +47,6 @@ function App() {
             <Route path="/faculty" element={<FacultyPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/transport" element={<TransportPage />} />
-
-            {/* SEO Optimized Campus Pages */}
-            <Route path="/shree-krishna-public-school-udairamsar" element={<ShreeKrishnaBhankrotaPage />} />
-            <Route path="/little-krishna-public-school-bikaner" element={<LittleKrishnaJaipurPage />} />
 
             {/* 404 Page */}
             <Route path="*" element={<NotFound />} />
