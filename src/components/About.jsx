@@ -212,7 +212,7 @@ const About = () => {
         {/* School Photos Grid */}
         <div
           ref={photosRef}
-          className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
+          className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto"
         >
           <div className={`rounded-xl overflow-hidden shadow-lg transition-all duration-700 ${photosVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
             }`}>
@@ -236,6 +236,15 @@ const About = () => {
             }`}>
             <img
               src="/images/activities.jpg"
+              alt="School Activity"
+              className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div className={`rounded-xl overflow-hidden shadow-lg transition-all duration-700 delay-400 ${photosVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
+            }`}>
+            <img
+              src="/images/events.jpg"
               alt="School Activity"
               className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
               loading="lazy"

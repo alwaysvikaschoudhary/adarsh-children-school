@@ -39,9 +39,10 @@ const Gallery = () => {
     { url: "/images/Sports/sports_1.jpg", title: "Inter-School Cricket Match", category: "Sports" },
     { url: "/images/Sports/sports_2.png", title: "Basketball Championship", category: "Sports" },
     { url: "/images/Sports/sports_3.png", title: "Athletics Meet", category: "Sports" },
-    { url: "/images/Leaderboard/leaderboard_1.jpg", title: "Class 12th Topper", category: "Leaderboard" },
-    { url: "/images/Leaderboard/leaderboard_2.jpg", title: "Class 10th Topper", category: "Leaderboard" },
+    { url: "/images/Leaderboard/leaderboard_1.png", title: "Class 12th Topper", category: "Leaderboard" },
+    { url: "/images/Leaderboard/leaderboard_2.png", title: "Class 10th Topper", category: "Leaderboard" },
     { url: "/images/Leaderboard/leaderboard_3.png", title: "Academic Achiever", category: "Leaderboard" },
+    { url: "/images/Leaderboard/leaderboard_4.png", title: "School Topper", category: "Leaderboard" },
   ];
 
   const categories = ['All', 'Achievements', 'Activities', 'Campus', 'Events', 'Sports', 'Leaderboard'];
@@ -125,7 +126,7 @@ const Gallery = () => {
         {/* Gallery Grid - Mobile Optimized */}
         <div
           ref={gridRef}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4"
         >
           {filteredImages.map((image, index) => (
             <div
@@ -176,12 +177,6 @@ const Gallery = () => {
                 alt={selectedImage.title}
                 className="w-full h-auto rounded-lg shadow-2xl max-h-[80vh] object-contain"
               />
-              <div className="text-white text-center mt-2 md:mt-4 px-4">
-                <span className="bg-accent-500 px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold">
-                  {selectedImage.category}
-                </span>
-                <h3 className="text-lg md:text-2xl font-bold mt-2">{selectedImage.title}</h3>
-              </div>
             </div>
           </div>
         )}

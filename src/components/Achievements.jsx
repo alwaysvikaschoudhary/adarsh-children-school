@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaTrophy, FaMedal, FaStar, FaAward, FaGraduationCap, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import {
+  FaTrophy,
+  FaMedal,
+  FaStar,
+  FaAward,
+  FaGraduationCap,
+  FaTimes,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const Achievements = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -13,65 +22,278 @@ const Achievements = () => {
   const [galleryRef, galleryVisible] = useScrollAnimation({ threshold: 0.1 });
 
   const galleryData = [
-    { "category": "Achievements", "src": "/images/Achievements/achievements_1.jpg", "title": "Achievements Image 1" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_2.jpg", "title": "Achievements Image 2" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_3.jpg", "title": "Achievements Image 3" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_4.jpg", "title": "Achievements Image 4" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_5.jpg", "title": "Achievements Image 5" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_6.png", "title": "Achievements Image 6" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_7.png", "title": "Achievements Image 7" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_8.png", "title": "Achievements Image 8" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_9.png", "title": "Achievements Image 9" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_10.png", "title": "Achievements Image 10" },
-    { "category": "Achievements", "src": "/images/Achievements/achievements_11.png", "title": "Achievements Image 11" },
-    { "category": "Activities", "src": "/images/Activities/activities_1.jpg", "title": "Activities Image 1" },
-    { "category": "Activities", "src": "/images/Activities/activities_2.jpg", "title": "Activities Image 2" },
-    { "category": "Activities", "src": "/images/Activities/activities_3.jpg", "title": "Activities Image 3" },
-    { "category": "Activities", "src": "/images/Activities/activities_4.jpg", "title": "Activities Image 4" },
-    { "category": "Activities", "src": "/images/Activities/activities_5.jpg", "title": "Activities Image 5" },
-    { "category": "Activities", "src": "/images/Activities/activities_6.jpg", "title": "Activities Image 6" },
-    { "category": "Activities", "src": "/images/Activities/activities_7.jpg", "title": "Activities Image 7" },
-    { "category": "Activities", "src": "/images/Activities/activities_8.jpg", "title": "Activities Image 8" },
-    { "category": "Activities", "src": "/images/Activities/activities_9.png", "title": "Activities Image 9" },
-    { "category": "Activities", "src": "/images/Activities/activities_10.png", "title": "Activities Image 10" },
-    { "category": "Activities", "src": "/images/Activities/activities_11.jpg", "title": "Activities Image 11" },
-    { "category": "Activities", "src": "/images/Activities/activities_12.jpg", "title": "Activities Image 12" },
-    { "category": "Activities", "src": "/images/Activities/activities_13.jpg", "title": "Activities Image 13" },
-    { "category": "Campus", "src": "/images/Campus/campus_1.jpg", "title": "Campus Image 1" },
-    { "category": "Campus", "src": "/images/Campus/campus_2.jpg", "title": "Campus Image 2" },
-    { "category": "Campus", "src": "/images/Campus/campus_3.jpg", "title": "Campus Image 3" },
-    { "category": "Campus", "src": "/images/Campus/campus_4.jpg", "title": "Campus Image 4" },
-    { "category": "Campus", "src": "/images/Campus/campus_5.jpg", "title": "Campus Image 5" },
-    { "category": "Campus", "src": "/images/Campus/campus_6.jpg", "title": "Campus Image 6" },
-    { "category": "Campus", "src": "/images/Campus/campus_7.jpg", "title": "Campus Image 7" },
-    { "category": "Campus", "src": "/images/Campus/campus_8.jpg", "title": "Campus Image 8" },
-    { "category": "Campus", "src": "/images/Campus/campus_9.jpg", "title": "Campus Image 9" },
-    { "category": "Campus", "src": "/images/Campus/campus_10.png", "title": "Campus Image 10" },
-    { "category": "Campus", "src": "/images/Campus/campus_11.png", "title": "Campus Image 11" },
-    { "category": "Campus", "src": "/images/Campus/campus_12.png", "title": "Campus Image 12" },
-    { "category": "Campus", "src": "/images/Campus/campus_13.jpg", "title": "Campus Image 13" },
-    { "category": "Events", "src": "/images/Events/events_1.jpg", "title": "Events Image 1" },
-    { "category": "Events", "src": "/images/Events/events_2.jpg", "title": "Events Image 2" },
-    { "category": "Events", "src": "/images/Events/events_3.jpg", "title": "Events Image 3" },
-    { "category": "Events", "src": "/images/Events/events_4.jpg", "title": "Events Image 4" },
-    { "category": "Events", "src": "/images/Events/events_5.jpg", "title": "Events Image 5" },
-    { "category": "Events", "src": "/images/Events/events_6.png", "title": "Events Image 6" },
-    { "category": "Sports", "src": "/images/Sports/sports_1.jpg", "title": "Sports Image 1" },
-    { "category": "Sports", "src": "/images/Sports/sports_2.png", "title": "Sports Image 2" },
-    { "category": "Sports", "src": "/images/Sports/sports_3.png", "title": "Sports Image 3" },
-    { "category": "Sports", "src": "/images/Sports/sports_4.png", "title": "Sports Image 4" },
-    { "category": "Leaderboard", "src": "/images/Leaderboard/leaderboard_1.jpg", "title": "Topper 1" },
-    { "category": "Leaderboard", "src": "/images/Leaderboard/leaderboard_2.jpg", "title": "Topper 2" },
-    { "category": "Leaderboard", "src": "/images/Leaderboard/leaderboard_3.png", "title": "Topper 3" },
-    { "category": "Leaderboard", "src": "/images/Leaderboard/leaderboard_4.png", "title": "Topper 4" }
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_1.jpg",
+      title: "Achievements Image 1",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_2.jpg",
+      title: "Achievements Image 2",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_3.jpg",
+      title: "Achievements Image 3",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_4.jpg",
+      title: "Achievements Image 4",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_5.jpg",
+      title: "Achievements Image 5",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_6.png",
+      title: "Achievements Image 6",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_7.png",
+      title: "Achievements Image 7",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_8.png",
+      title: "Achievements Image 8",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_9.png",
+      title: "Achievements Image 9",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_10.png",
+      title: "Achievements Image 10",
+    },
+    {
+      category: "Achievements",
+      src: "/images/Achievements/achievements_11.png",
+      title: "Achievements Image 11",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_1.jpg",
+      title: "Activities Image 1",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_2.jpg",
+      title: "Activities Image 2",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_3.jpg",
+      title: "Activities Image 3",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_4.jpg",
+      title: "Activities Image 4",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_5.jpg",
+      title: "Activities Image 5",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_6.jpg",
+      title: "Activities Image 6",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_7.jpg",
+      title: "Activities Image 7",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_8.jpg",
+      title: "Activities Image 8",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_9.png",
+      title: "Activities Image 9",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_10.png",
+      title: "Activities Image 10",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_11.jpg",
+      title: "Activities Image 11",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_12.jpg",
+      title: "Activities Image 12",
+    },
+    {
+      category: "Activities",
+      src: "/images/Activities/activities_13.jpg",
+      title: "Activities Image 13",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_1.jpg",
+      title: "Campus Image 1",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_2.jpg",
+      title: "Campus Image 2",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_3.jpg",
+      title: "Campus Image 3",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_4.jpg",
+      title: "Campus Image 4",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_5.jpg",
+      title: "Campus Image 5",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_6.jpg",
+      title: "Campus Image 6",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_7.jpg",
+      title: "Campus Image 7",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_8.jpg",
+      title: "Campus Image 8",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_9.jpg",
+      title: "Campus Image 9",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_10.png",
+      title: "Campus Image 10",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_11.png",
+      title: "Campus Image 11",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_12.png",
+      title: "Campus Image 12",
+    },
+    {
+      category: "Campus",
+      src: "/images/Campus/campus_13.jpg",
+      title: "Campus Image 13",
+    },
+    {
+      category: "Events",
+      src: "/images/Events/events_1.jpg",
+      title: "Events Image 1",
+    },
+    {
+      category: "Events",
+      src: "/images/Events/events_2.jpg",
+      title: "Events Image 2",
+    },
+    {
+      category: "Events",
+      src: "/images/Events/events_3.jpg",
+      title: "Events Image 3",
+    },
+    {
+      category: "Events",
+      src: "/images/Events/events_4.jpg",
+      title: "Events Image 4",
+    },
+    {
+      category: "Events",
+      src: "/images/Events/events_5.jpg",
+      title: "Events Image 5",
+    },
+    {
+      category: "Events",
+      src: "/images/Events/events_6.png",
+      title: "Events Image 6",
+    },
+    {
+      category: "Sports",
+      src: "/images/Sports/sports_1.jpg",
+      title: "Sports Image 1",
+    },
+    {
+      category: "Sports",
+      src: "/images/Sports/sports_2.png",
+      title: "Sports Image 2",
+    },
+    {
+      category: "Sports",
+      src: "/images/Sports/sports_3.png",
+      title: "Sports Image 3",
+    },
+    {
+      category: "Sports",
+      src: "/images/Sports/sports_4.png",
+      title: "Sports Image 4",
+    },
+    {
+      category: "Leaderboard",
+      src: "/images/Leaderboard/leaderboard_1.png",
+      title: "Topper 1",
+    },
+    {
+      category: "Leaderboard",
+      src: "/images/Leaderboard/leaderboard_2.png",
+      title: "Topper 2",
+    },
+    {
+      category: "Leaderboard",
+      src: "/images/Leaderboard/leaderboard_3.png",
+      title: "Topper 3",
+    },
+    {
+      category: "Leaderboard",
+      src: "/images/Leaderboard/leaderboard_4.png",
+      title: "Topper 4",
+    },
   ];
 
-  const categories = ['All', 'Achievements', 'Activities', 'Campus', 'Events', 'Sports', 'Leaderboard'];
-  const [activeCategory, setActiveCategory] = useState('All');
+  const categories = [
+    "All",
+    "Achievements",
+    "Activities",
+    "Campus",
+    "Events",
+    "Sports",
+    "Leaderboard",
+  ];
+  const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredImages = activeCategory === 'All' 
-    ? galleryData 
-    : galleryData.filter(img => img.category === activeCategory);
+  const filteredImages =
+    activeCategory === "All"
+      ? galleryData
+      : galleryData.filter((img) => img.category === activeCategory);
 
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
@@ -89,7 +311,8 @@ const Achievements = () => {
   };
 
   const prevImage = () => {
-    const prevIndex = (currentImageIndex - 1 + filteredImages.length) % filteredImages.length;
+    const prevIndex =
+      (currentImageIndex - 1 + filteredImages.length) % filteredImages.length;
     setCurrentImageIndex(prevIndex);
     setSelectedImage(filteredImages[prevIndex]);
   };
@@ -97,60 +320,61 @@ const Achievements = () => {
   const majorAchievements = [
     {
       icon: FaTrophy,
-      title: 'Best Principal Award',
-      description: 'In Top 1000 Schools out of 15 Lakh Schools',
-      subtitle: 'Indian Talent Olympiad Recognition',
-      image: '/images/achievements/WhatsApp_Image_2025-12-02_at_18.32.52-e978874f-94e5-4cda-a7c9-56bd65e6cdd6.png',
-      color: 'from-yellow-400 to-yellow-600',
-      stats: 'Principal: Preeti Shrivastava',
+      title: "Best Principal Award",
+      description: "In Top 1000 Schools out of 15 Lakh Schools",
+      subtitle: "Indian Talent Olympiad Recognition",
+      image:
+        "/images/achievements/WhatsApp_Image_2025-12-02_at_18.32.52-e978874f-94e5-4cda-a7c9-56bd65e6cdd6.png",
+      color: "from-yellow-400 to-yellow-600",
+      stats: "Principal: Preeti Shrivastava",
     },
     {
       icon: FaMedal,
-      title: '🥇 38 Gold Medals',
-      description: 'Won in a Single Year',
-      subtitle: 'SOF International Olympiad',
-      color: 'from-blue-400 to-blue-600',
-      stats: 'English: 12 | Science: 09 | Math: 17',
+      title: "🥇 38 Gold Medals",
+      description: "Won in a Single Year",
+      subtitle: "SOF International Olympiad",
+      color: "from-blue-400 to-blue-600",
+      stats: "English: 12 | Science: 09 | Math: 17",
     },
     {
       icon: FaStar,
-      title: '🥋 5 Black Belts',
-      description: 'Achieved in a Single Year',
-      subtitle: 'Okinawa Shorin-Ryu Karate',
-      color: 'from-red-400 to-red-600',
-      stats: 'Exceptional Discipline & Skill',
+      title: "🥋 5 Black Belts",
+      description: "Achieved in a Single Year",
+      subtitle: "Okinawa Shorin-Ryu Karate",
+      color: "from-red-400 to-red-600",
+      stats: "Exceptional Discipline & Skill",
     },
     {
       icon: FaAward,
-      title: '🎖️ 25 Sports Medals',
-      description: 'Won in a Single Year',
-      subtitle: 'District & State Level Games',
-      color: 'from-green-400 to-green-600',
-      stats: '68th District Level Champion',
+      title: "🎖️ 25 Sports Medals",
+      description: "Won in a Single Year",
+      subtitle: "District & State Level Games",
+      color: "from-green-400 to-green-600",
+      stats: "68th District Level Champion",
     },
   ];
 
   const boardResults = [
     {
-      title: 'Class 10 Results',
-      percentage: 'Passed 100%',
-      students: 'Elite',
-      description: 'Exceptional board performance',
-      color: 'bg-gradient-to-br from-purple-500 to-purple-700',
+      title: "Class 10 Results",
+      percentage: "Passed 100%",
+      students: "Elite",
+      description: "Exceptional board performance",
+      color: "bg-gradient-to-br from-purple-500 to-purple-700",
     },
     {
-      title: 'Doctors (MBBS)',
-      percentage: 'Every Year',
-      students: '7-8',
-      description: 'Students entering medical fields',
-      color: 'bg-gradient-to-br from-red-500 to-red-700',
+      title: "Doctors (MBBS)",
+      percentage: "Every Year",
+      students: "7-8",
+      description: "Students entering medical fields",
+      color: "bg-gradient-to-br from-red-500 to-red-700",
     },
     {
-      title: 'Engineers (IIT/NIT)',
-      percentage: 'Annually',
-      students: '3-5',
-      description: 'Students entering engineering',
-      color: 'bg-gradient-to-br from-blue-500 to-blue-700',
+      title: "Engineers (IIT/NIT)",
+      percentage: "Annually",
+      students: "3-5",
+      description: "Students entering engineering",
+      color: "bg-gradient-to-br from-blue-500 to-blue-700",
     },
   ];
 
@@ -160,8 +384,11 @@ const Achievements = () => {
         {/* Section Header */}
         <div
           ref={headerRef}
-          className={`text-center mb-16 transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+          className={`text-center mb-16 transition-all duration-1000 ${
+            headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
         >
           <div className="inline-block mb-4">
             <FaTrophy className="text-6xl text-yellow-500 animate-bounce mx-auto" />
@@ -178,8 +405,9 @@ const Achievements = () => {
         {/* Best Principal Award Highlight */}
         <div
           ref={awardRef}
-          className={`max-w-5xl mx-auto mb-16 transition-all duration-1000 ${awardVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-            }`}
+          className={`max-w-5xl mx-auto mb-16 transition-all duration-1000 ${
+            awardVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+          }`}
         >
           <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 rounded-3xl p-1 shadow-2xl">
             <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-12">
@@ -197,17 +425,18 @@ const Achievements = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-lg">
-                    <strong>Principal Preeti Shrivastava</strong> has been honored with the{' '}
-                    <strong>Best Principal Award</strong>, selected from the{' '}
+                    <strong>Principal Preeti Shrivastava</strong> has been
+                    honored with the <strong>Best Principal Award</strong>,
+                    selected from the{" "}
                     <strong className="text-primary-600 dark:text-accent-400">
                       In top 1000 schools out of 15 lakh schools
-                    </strong>{' '}
-                    across India - a lifetime achievement recognizing exceptional leadership and
-                    contribution to education.
+                    </strong>{" "}
+                    across India - a lifetime achievement recognizing
+                    exceptional leadership and contribution to education.
                   </p>
-                  
+
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <div className="bg-yellow-100 dark:bg-yellow-900/30 px-5 py-3 rounded-full">
                       <span className="text-yellow-800 dark:text-yellow-300 font-semibold text-lg">
@@ -230,7 +459,7 @@ const Achievements = () => {
                         src="/images/Members/principal.svg"
                         alt="Principal Preeti Shrivastava"
                         className="w-full h-full object-cover object-top rounded-full scale-110"
-                        style={{ objectPosition: 'center 20%' }}
+                        style={{ objectPosition: "center 20%" }}
                         loading="lazy"
                       />
                     </div>
@@ -254,27 +483,43 @@ const Achievements = () => {
 
         {/* Single Year Achievement Highlights - High Impact Row */}
         <div className="mb-16">
-          <h3 className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${cardsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h3
+            className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${cardsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          >
             🏆 Major Milestones (In a Single Year)
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className={`bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
+            <div
+              className={`bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
+            >
               <div className="text-6xl font-bold mb-2">38</div>
               <div className="text-2xl font-semibold mb-2">Gold Medals</div>
               <div className="text-lg opacity-90 mb-2">In a Single Year</div>
-              <div className="text-sm opacity-80">SOF International Olympiad</div>
+              <div className="text-sm opacity-80">
+                SOF International Olympiad
+              </div>
             </div>
-            <div className={`bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`} style={{ transitionDelay: '200ms' }}>
+            <div
+              className={`bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
+              style={{ transitionDelay: "200ms" }}
+            >
               <div className="text-6xl font-bold mb-2">5</div>
               <div className="text-2xl font-semibold mb-2">Black Belts</div>
               <div className="text-lg opacity-90 mb-2">In a Single Year</div>
-              <div className="text-sm opacity-80">Okinawa Shorin-Ryu Karate</div>
+              <div className="text-sm opacity-80">
+                Okinawa Shorin-Ryu Karate
+              </div>
             </div>
-            <div className={`bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`} style={{ transitionDelay: '400ms' }}>
+            <div
+              className={`bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
+              style={{ transitionDelay: "400ms" }}
+            >
               <div className="text-6xl font-bold mb-2">25</div>
               <div className="text-2xl font-semibold mb-2">Sports Medals</div>
               <div className="text-lg opacity-90 mb-2">In a Single Year</div>
-              <div className="text-sm opacity-80">District Level Excellence</div>
+              <div className="text-sm opacity-80">
+                District Level Excellence
+              </div>
             </div>
           </div>
         </div>
@@ -287,19 +532,26 @@ const Achievements = () => {
           {majorAchievements.map((achievement, index) => (
             <div
               key={index}
-              className={`group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg card-hover transition-all duration-700 ${cardsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-                }`}
+              className={`group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg card-hover transition-all duration-700 ${
+                cardsVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-20"
+              }`}
               style={{
-                transitionDelay: cardsVisible ? `${index * 150}ms` : '0ms'
+                transitionDelay: cardsVisible ? `${index * 150}ms` : "0ms",
               }}
             >
               {/* Gradient Background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-10 group-hover:opacity-20 transition-opacity`}></div>
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-10 group-hover:opacity-20 transition-opacity`}
+              ></div>
 
               {/* Content */}
               <div className="relative p-6">
                 {/* Icon */}
-                <div className={`w-16 h-16 bg-gradient-to-br ${achievement.color} rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
+                <div
+                  className={`w-16 h-16 bg-gradient-to-br ${achievement.color} rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}
+                >
                   <achievement.icon className="text-3xl text-white" />
                 </div>
 
@@ -331,29 +583,40 @@ const Achievements = () => {
         </div>
 
         {/* Board Results */}
-        <div
-          ref={resultsRef}
-          className="max-w-5xl mx-auto mb-16"
-        >
-          <h3 className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${resultsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}>
+        <div ref={resultsRef} className="max-w-5xl mx-auto mb-16">
+          <h3
+            className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${
+              resultsVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+          >
             🎓 Glorious Board Results
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {boardResults.map((result, index) => (
               <div
                 key={index}
-                className={`${result.color} rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${resultsVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
-                  }`}
+                className={`${result.color} rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${
+                  resultsVisible
+                    ? "opacity-100 scale-100"
+                    : "opacity-0 scale-90"
+                }`}
                 style={{
-                  transitionDelay: resultsVisible ? `${200 + index * 150}ms` : '0ms'
+                  transitionDelay: resultsVisible
+                    ? `${200 + index * 150}ms`
+                    : "0ms",
                 }}
               >
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 break-words px-1 leading-tight tracking-tight">
                   {result.students}
                 </div>
-                <div className="text-2xl font-semibold mb-2">{result.title}</div>
-                <div className="text-lg opacity-90 mb-2">{result.percentage}</div>
+                <div className="text-2xl font-semibold mb-2">
+                  {result.title}
+                </div>
+                <div className="text-lg opacity-90 mb-2">
+                  {result.percentage}
+                </div>
                 <div className="text-sm opacity-80">{result.description}</div>
               </div>
             ))}
@@ -361,50 +624,61 @@ const Achievements = () => {
         </div>
 
         {/* Achievement Gallery */}
-        <div
-          ref={galleryRef}
-          className="max-w-6xl mx-auto"
-        >
-          <h3 className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${galleryVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}>
+        <div ref={galleryRef} className="max-w-6xl mx-auto">
+          <h3
+            className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${
+              galleryVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+          >
             📸 Award Gallery
           </h3>
 
           {/* Folders Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
-            {categories.filter(c => c !== 'All').map((category, index) => {
-              const categoryImages = galleryData.filter(img => img.category === category);
-              const firstImage = categoryImages[0]?.src || '/images/school-building.png';
-              
-              return (
-                <div
-                  key={index}
-                  className={`group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:scale-105 transition-all duration-300 ${galleryVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            {categories
+              .filter((c) => c !== "All")
+              .map((category, index) => {
+                const categoryImages = galleryData.filter(
+                  (img) => img.category === category,
+                );
+                const firstImage =
+                  categoryImages[0]?.src || "/images/school-building.png";
+
+                return (
+                  <div
+                    key={index}
+                    className={`group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transform hover:scale-105 transition-all duration-300 ${
+                      galleryVisible
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-10"
                     }`}
-                  style={{ transitionDelay: `${index * 100}ms` }}
-                  onClick={() => {
-                    setActiveCategory(category);
-                    setTimeout(() => openLightbox(0), 0);
-                  }}
-                >
-                  <div className="h-40 md:h-48 relative">
-                    <img
-                      src={firstImage}
-                      alt={category}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-                      <div className="bg-white/20 backdrop-blur-md p-3 rounded-full mb-2 group-hover:bg-yellow-500 transition-colors">
-                        <FaStar className="text-xl" />
+                    style={{ transitionDelay: `${index * 100}ms` }}
+                    onClick={() => {
+                      setActiveCategory(category);
+                      setTimeout(() => openLightbox(0), 0);
+                    }}
+                  >
+                    <div className="h-40 md:h-48 relative">
+                      <img
+                        src={firstImage}
+                        alt={category}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                        <h4 className="font-bold text-lg text-center">
+                          {category}
+                        </h4>
+                        <p className="text-xs opacity-80 mt-1">
+                          {categoryImages.length} Photos
+                        </p>
                       </div>
-                      <h4 className="font-bold text-lg text-center">{category}</h4>
-                      <p className="text-xs opacity-80 mt-1">{categoryImages.length} Photos</p>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
         </div>
 
@@ -457,14 +731,6 @@ const Achievements = () => {
                 alt={selectedImage.title}
                 className="w-full h-auto max-h-[85vh] object-contain rounded-lg shadow-2xl"
               />
-              {/* Image Info */}
-              <div className="text-white text-center mt-4 bg-black/50 backdrop-blur-sm rounded-lg p-4">
-                <h3 className="text-xl md:text-2xl font-bold mb-1">{selectedImage.title}</h3>
-                <p className="text-sm md:text-base text-gray-300">{selectedImage.description}</p>
-                <p className="text-xs md:text-sm text-gray-400 mt-2">
-                  Image {currentImageIndex + 1} of {filteredImages.length}
-                </p>
-              </div>
             </div>
           </div>
         )}
