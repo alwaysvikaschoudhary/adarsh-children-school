@@ -1,25 +1,25 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import FloatingContact from './components/FloatingContact';
-import ScrollToTop from './components/ScrollToTop';
-import ScrollProgress from './components/ScrollProgress';
-import { initEmailJS } from './services/emailService';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import FloatingContact from "./components/FloatingContact";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollProgress from "./components/ScrollProgress";
+import { initEmailJS } from "./services/emailService";
 
 // Pages
-import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import CampusesPage from './pages/CampusesPage';
-import FacilitiesPage from './pages/FacilitiesPage';
-import AdmissionsPage from './pages/AdmissionsPage';
-import GalleryPage from './pages/GalleryPage';
-import EventsPage from './pages/EventsPage';
-import FacultyPage from './pages/FacultyPage';
-import ContactPage from './pages/ContactPage';
-import TransportPage from './pages/TransportPage';
-import AchievementsPage from './pages/AchievementsPage';
-import NotFound from './pages/NotFound';
+import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
+import CampusesPage from "./pages/CampusesPage";
+import FacilitiesPage from "./pages/FacilitiesPage";
+import AdmissionsPage from "./pages/AdmissionsPage";
+import GalleryPage from "./pages/GalleryPage";
+import EventsPage from "./pages/EventsPage";
+import FacultyPage from "./pages/FacultyPage";
+import ContactPage from "./pages/ContactPage";
+import TransportPage from "./pages/TransportPage";
+import AchievementsPage from "./pages/AchievementsPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   useEffect(() => {
@@ -32,7 +32,6 @@ function App() {
       <ScrollToTop />
       <ScrollProgress />
       <div className="min-h-screen bg-gray-50 overflow-x-hidden">
-
         <Header />
         <main id="main-content" className="overflow-x-hidden">
           <Routes>

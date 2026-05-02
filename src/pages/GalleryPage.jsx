@@ -1,7 +1,7 @@
-import React from 'react';
-import Gallery from '../components/Gallery';
-import { FaCamera, FaImages, FaInstagram } from 'react-icons/fa';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import React from "react";
+import Gallery from "../components/Gallery";
+import { FaCamera, FaImages, FaInstagram } from "react-icons/fa";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const GalleryPage = () => {
   const [headerRef, headerVisible] = useScrollAnimation({ threshold: 0.2 });
@@ -12,10 +12,14 @@ const GalleryPage = () => {
       <section className="relative bg-gradient-to-br from-amber-900 via-orange-800 to-red-900 text-white py-6 md:py-8 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 40% 50%, white 1px, transparent 1px), radial-gradient(circle at 60% 70%, white 1px, transparent 1px)',
-            backgroundSize: '45px 45px'
-          }}></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 40% 50%, white 1px, transparent 1px), radial-gradient(circle at 60% 70%, white 1px, transparent 1px)",
+              backgroundSize: "45px 45px",
+            }}
+          ></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -23,27 +27,35 @@ const GalleryPage = () => {
             {/* Left Content */}
             <div className="text-center md:text-left animate-slide-in-left">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-                Photo <span className="text-orange-400">Gallery</span><br />
+                Photo <span className="text-orange-400">Gallery</span>
+                <br />
                 Our Memories
               </h1>
 
               <p className="text-lg md:text-xl text-amber-100 mb-6 leading-relaxed">
-                Glimpses of life at Adarsh Children's Senior Secondary School - Capturing moments, creating memories
+                Glimpses of life at Adarsh Children's Senior Secondary School -
+                Capturing moments, creating memories
               </p>
 
               {/* Gallery Stats */}
               <div className="grid grid-cols-3 gap-4 mb-8 max-w-md mx-auto md:mx-0">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/20 transition-all">
-                  <div className="text-2xl md:text-3xl font-bold text-orange-400">47+</div>
+                  <div className="text-2xl md:text-3xl font-bold text-orange-400">
+                    47+
+                  </div>
                   <div className="text-xs text-amber-200">Photos</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/20 transition-all">
-                  <div className="text-2xl md:text-3xl font-bold text-orange-400">7</div>
+                  <div className="text-2xl md:text-3xl font-bold text-orange-400">
+                    7
+                  </div>
                   <div className="text-xs text-amber-200">Categories</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/20 transition-all">
-                  <div className="text-2xl md:text-3xl font-bold text-orange-400">2</div>
-                  <div className="text-xs text-amber-200">Campuses</div>
+                  <div className="text-2xl md:text-3xl font-bold text-orange-400">
+                    2
+                  </div>
+                  <div className="text-xs text-amber-200">campus</div>
                 </div>
               </div>
 
@@ -111,7 +123,10 @@ const GalleryPage = () => {
           </div>
 
           {/* Feature Banner */}
-          <div className="mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div
+            className="mt-12 text-center animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
             <div className="inline-flex flex-wrap items-center justify-center gap-4 bg-orange-400 text-gray-900 px-6 py-3 rounded-full font-bold shadow-lg">
               <span>📷 Campus Life</span>
               <span className="hidden sm:inline">•</span>
@@ -124,8 +139,15 @@ const GalleryPage = () => {
 
         {/* Wave Divider */}
         <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white" />
+          <svg
+            viewBox="0 0 1440 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+              fill="white"
+            />
           </svg>
         </div>
       </section>

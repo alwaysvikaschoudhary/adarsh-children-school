@@ -23,7 +23,7 @@ const pages = [
   { path: '/facilities', changefreq: 'monthly', priority: '0.8' },
   { path: '/transport', changefreq: 'monthly', priority: '0.8' },
   { path: '/achievements', changefreq: 'monthly', priority: '0.85' },
-  { path: '/campuses', changefreq: 'monthly', priority: '0.9' },
+  { path: '/campus', changefreq: 'monthly', priority: '0.9' },
   { path: '/gallery', changefreq: 'weekly', priority: '0.7' },
   { path: '/events', changefreq: 'weekly', priority: '0.8' },
   { path: '/faculty', changefreq: 'monthly', priority: '0.8' },

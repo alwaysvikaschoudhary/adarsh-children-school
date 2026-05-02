@@ -1,61 +1,77 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt, FaPhone, FaClock, FaGraduationCap } from 'react-icons/fa';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaClock,
+  FaGraduationCap,
+} from "react-icons/fa";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
-const Campuses = () => {
+const campus = () => {
   const [headerRef, headerVisible] = useScrollAnimation({ threshold: 0.2 });
-  const [campusesRef, campusesVisible] = useScrollAnimation({ threshold: 0.1 });
-  const campuses = [
+  const [campusRef, campusVisible] = useScrollAnimation({ threshold: 0.1 });
+  const campus = [
     {
       name: "Adarsh Children's Senior Secondary School",
-      tagline: 'Main Campus',
-      description: 'Our flagship campus offering comprehensive education from primary to senior secondary levels with state-of-the-art facilities and experienced faculty.',
-      address: 'Near Radhika Marriage Garden, Bhankrota, Rajasthan 302026',
-      phone: '+918947097731',
-      pincode: '302026',
-      googleId: 'Near Radhika Marriage Garden',
-      image: '/images/Campus/campus_1.jpg',
-      gradient: 'from-blue-600 to-blue-800',
-      features: ['Classes 1-12', 'RBSE Affiliated', 'Science & Computer Labs', 'Sports Complex'],
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3558.878533235344!2d75.687156!3d26.8756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4b10414390ef%3A0xba16854dc4280343!2sAdarsh%20childrens%20sr.%20Sec.%20School!5e0!3m2!1sen!2sin!4v1777742884742!5m2!1sen!2sin',
-      directionsUrl: 'https://www.google.com/maps/place/Adarsh+childrens+sr.+Sec.+School/@26.8758898,75.6873726,17z/data=!3m1!4b1!4m6!3m5!1s0x396c4b10414390ef:0xba16854dc4280343!8m2!3d26.8758898!4d75.6873726!16s%2Fg%2F11t6yp80w_',
-    }
+      tagline: "Main Campus",
+      description:
+        "Our flagship campus offering comprehensive education from primary to senior secondary levels with state-of-the-art facilities and experienced faculty.",
+      address: "Near Radhika Marriage Garden, Bhankrota, Rajasthan 302026",
+      phone: "+918947097731",
+      pincode: "302026",
+      googleId: "Near Radhika Marriage Garden",
+      image: "/images/Campus/campus_1.jpg",
+      gradient: "from-blue-600 to-blue-800",
+      features: [
+        "Classes 1-12",
+        "RBSE Affiliated",
+        "Science & Computer Labs",
+        "Sports Complex",
+      ],
+      mapUrl:
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3558.878533235344!2d75.687156!3d26.8756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4b10414390ef%3A0xba16854dc4280343!2sAdarsh%20childrens%20sr.%20Sec.%20School!5e0!3m2!1sen!2sin!4v1777742884742!5m2!1sen!2sin",
+      directionsUrl:
+        "https://www.google.com/maps/place/Adarsh+childrens+sr.+Sec.+School/@26.8758898,75.6873726,17z/data=!3m1!4b1!4m6!3m5!1s0x396c4b10414390ef:0xba16854dc4280343!8m2!3d26.8758898!4d75.6873726!16s%2Fg%2F11t6yp80w_",
+    },
   ];
 
   return (
-    <section id="campuses" className="py-20 bg-gray-50 overflow-hidden">
+    <section id="campus" className="py-20 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div
           ref={headerRef}
-          className={`text-center mb-16 transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+          className={`text-center mb-16 transition-all duration-1000 ${
+            headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 mb-4">
-            Our <span className="gradient-text">Campuses</span>
+            Our <span className="gradient-text">campus</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-6"></div>
           <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-            Two world-class campuses designed to provide the best learning environment for every age group
+            Two world-class campus designed to provide the best learning
+            environment for every age group
           </p>
         </div>
 
-        {/* Campuses */}
-        <div
-          ref={campusesRef}
-          className="space-y-16"
-        >
-          {campuses.map((campus, index) => (
+        {/* campus */}
+        <div ref={campusRef} className="space-y-16">
+          {campus.map((campus, index) => (
             <div
               key={index}
-              className={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''
-                }`}
+              className={`grid lg:grid-cols-2 gap-8 items-center ${
+                index % 2 === 1 ? "lg:grid-flow-dense" : ""
+              }`}
             >
               {/* Image Section */}
               <div
-                className={`relative animate-slide-in-${index % 2 === 0 ? 'left' : 'right'} ${index % 2 === 1 ? 'lg:col-start-2' : ''
-                  }`}
+                className={`relative animate-slide-in-${index % 2 === 0 ? "left" : "right"} ${
+                  index % 2 === 1 ? "lg:col-start-2" : ""
+                }`}
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                   <img
@@ -64,23 +80,30 @@ const Campuses = () => {
                     className="w-full h-56 md:h-96 object-cover group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${campus.gradient} opacity-40 group-hover:opacity-30 transition-opacity`}></div>
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-t ${campus.gradient} opacity-40 group-hover:opacity-30 transition-opacity`}
+                  ></div>
 
                   {/* Floating badge */}
                   <div className="absolute top-6 right-6 bg-white px-4 py-2 rounded-full shadow-lg flex items-center space-x-2">
                     <FaGraduationCap className="text-primary-600" />
-                    <span className="font-semibold text-gray-800">{campus.tagline}</span>
+                    <span className="font-semibold text-gray-800">
+                      {campus.tagline}
+                    </span>
                   </div>
                 </div>
 
                 {/* Decorative elements */}
-                <div className={`absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-${index % 2 === 0 ? 'primary' : 'accent'} rounded-full blur-3xl opacity-20`}></div>
+                <div
+                  className={`absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-${index % 2 === 0 ? "primary" : "accent"} rounded-full blur-3xl opacity-20`}
+                ></div>
               </div>
 
               {/* Content Section */}
               <div
-                className={`animate-slide-in-${index % 2 === 0 ? 'right' : 'left'} ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''
-                  }`}
+                className={`animate-slide-in-${index % 2 === 0 ? "right" : "left"} ${
+                  index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""
+                }`}
               >
                 <div className="bg-white p-8 rounded-2xl shadow-xl">
                   {/* Campus Logo & Title */}
@@ -91,11 +114,17 @@ const Campuses = () => {
                       className="w-20 h-20 object-contain"
                     />
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-800">{campus.name}</h3>
-                      <p className="text-sm text-gray-500 font-medium">{campus.tagline}</p>
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-800">
+                        {campus.name}
+                      </h3>
+                      <p className="text-sm text-gray-500 font-medium">
+                        {campus.tagline}
+                      </p>
                     </div>
                   </div>
-                  <p className="text-gray-600 leading-relaxed mb-6">{campus.description}</p>
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    {campus.description}
+                  </p>
 
                   {/* Features Grid */}
                   <div className="grid grid-cols-2 gap-3 mb-6">
@@ -113,18 +142,25 @@ const Campuses = () => {
                       <FaMapMarkerAlt className="text-primary-600 mt-1 flex-shrink-0" />
                       <div>
                         <span className="text-gray-700">{campus.address}</span>
-                        <p className="text-sm text-gray-500 mt-1">PIN: {campus.pincode} • Google ID: {campus.googleId}</p>
+                        <p className="text-sm text-gray-500 mt-1">
+                          PIN: {campus.pincode} • Google ID: {campus.googleId}
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
                       <FaPhone className="text-primary-600 flex-shrink-0" />
-                      <a href={`tel:${campus.phone}`} className="text-gray-700 hover:text-primary-600">
+                      <a
+                        href={`tel:${campus.phone}`}
+                        className="text-gray-700 hover:text-primary-600"
+                      >
                         {campus.phone}
                       </a>
                     </div>
                     <div className="flex items-center space-x-3">
                       <FaClock className="text-primary-600 flex-shrink-0" />
-                      <span className="text-gray-700">Mon - Sat: 8:00 AM - 2:00 PM</span>
+                      <span className="text-gray-700">
+                        Mon - Sat: 8:00 AM - 2:00 PM
+                      </span>
                     </div>
                   </div>
 
@@ -150,10 +186,9 @@ const Campuses = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
 };
 
-export default Campuses;
+export default campus;

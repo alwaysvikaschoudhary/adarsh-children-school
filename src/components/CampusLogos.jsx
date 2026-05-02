@@ -1,5 +1,5 @@
-import React from 'react';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import React from "react";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const CampusLogos = () => {
   const [headerRef, headerVisible] = useScrollAnimation({ threshold: 0.2 });
@@ -10,13 +10,18 @@ const CampusLogos = () => {
       <div className="container mx-auto px-4">
         <div
           ref={headerRef}
-          className={`text-center mb-8 transition-all duration-1000 ${headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+          className={`text-center mb-8 transition-all duration-1000 ${
+            headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
         >
           <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-            Our Two Campuses
+            Our Two campus
           </h3>
-          <p className="text-gray-600">Serving students from early years to senior secondary</p>
+          <p className="text-gray-600">
+            Serving students from early years to senior secondary
+          </p>
         </div>
 
         <div
@@ -36,8 +41,12 @@ const CampusLogos = () => {
             <h4 className="text-xl font-bold text-gray-800 mb-2">
               Adarsh Children's Senior Secondary School
             </h4>
-            <p className="text-sm text-gray-600 mb-3">Main Campus • Since 2012</p>
-            <p className="text-xs text-gray-500 mb-4">Classes 1-12 • RBSE Affiliated</p>
+            <p className="text-sm text-gray-600 mb-3">
+              Main Campus • Since 2012
+            </p>
+            <p className="text-xs text-gray-500 mb-4">
+              Classes 1-12 • RBSE Affiliated
+            </p>
             <div className="flex items-center justify-center space-x-2 text-sm text-primary-600 font-semibold">
               <span>🏆 In Top 1000 Schools in India</span>
             </div>
@@ -45,7 +54,6 @@ const CampusLogos = () => {
         </div>
 
         {/* Info Banner */}
-
       </div>
     </section>
   );

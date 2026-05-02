@@ -1,14 +1,13 @@
-import React, { Suspense, lazy } from 'react';
-import Hero from '../components/Hero';
-import InfiniteSlider from '../components/InfiniteSlider';
-
+import React, { Suspense, lazy } from "react";
+import Hero from "../components/Hero";
+import InfiniteSlider from "../components/InfiniteSlider";
 
 // Lazy load below-the-fold components
-const About = lazy(() => import('../components/About'));
-const Campuses = lazy(() => import('../components/Campuses'));
-const Testimonials = lazy(() => import('../components/Testimonials'));
-const Achievements = lazy(() => import('../components/Achievements'));
-const FAQ = lazy(() => import('../components/FAQ'));
+const About = lazy(() => import("../components/About"));
+const Campuses = lazy(() => import("../components/Campuses"));
+const Testimonials = lazy(() => import("../components/Testimonials"));
+const Achievements = lazy(() => import("../components/Achievements"));
+const FAQ = lazy(() => import("../components/FAQ"));
 
 const LoadingFallback = () => (
   <div className="py-20 flex justify-center items-center">
@@ -17,15 +16,12 @@ const LoadingFallback = () => (
 );
 
 const Home = () => {
-
-
   return (
     <div>
       <Hero />
 
       {/* Infinite Slider */}
       <InfiniteSlider />
-
 
       <Suspense fallback={<LoadingFallback />}>
         <About />

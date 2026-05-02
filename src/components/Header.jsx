@@ -48,7 +48,7 @@ const Header = () => {
       dropdown: [
         { name: 'About Us', href: '/about' },
         { name: 'Achievements', href: '/achievements' },
-        { name: 'Campuses', href: '/campuses' },
+        { name: 'Campus', href: '/campus' },
         { name: 'Faculty', href: '/faculty' },
       ]
     },

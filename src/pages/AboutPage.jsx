@@ -1,22 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import About from '../components/About';
-import Leadership from '../components/Leadership';
-import InfiniteSlider from '../components/InfiniteSlider';
-import { FaHistory, FaEye, FaBullseye, FaHeart, FaTrophy } from 'react-icons/fa';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import React from "react";
+import { Link } from "react-router-dom";
+import About from "../components/About";
+import Leadership from "../components/Leadership";
+import InfiniteSlider from "../components/InfiniteSlider";
+import {
+  FaHistory,
+  FaEye,
+  FaBullseye,
+  FaHeart,
+  FaTrophy,
+} from "react-icons/fa";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const AboutPage = () => {
   const [storyRef, storyVisible] = useScrollAnimation({ threshold: 0.2 });
   const [visionRef, visionVisible] = useScrollAnimation({ threshold: 0.1 });
   const [timelineRef, timelineVisible] = useScrollAnimation({ threshold: 0.1 });
   const timeline = [
-    { year: '2012', event: 'School Established in Bhankrota, Jaipur' },
-    { year: '2008', event: 'RBSE Affiliation Received' },
-    { year: '2016', event: 'New Science Block Inaugurated' },
-    { year: '2020', event: 'Digital Classrooms Implemented' },
-    { year: '2024', event: 'Best Principal Award - In Top 1000 Schools' },
-    { year: '2024', event: "Adarsh Children's Early Years Campus Opened" },
+    { year: "2012", event: "School Established in Bhankrota, Jaipur" },
+    { year: "2008", event: "RBSE Affiliation Received" },
+    { year: "2016", event: "New Science Block Inaugurated" },
+    { year: "2020", event: "Digital Classrooms Implemented" },
+    { year: "2024", event: "Best Principal Award - In Top 1000 Schools" },
+    { year: "2024", event: "Adarsh Children's Early Years Campus Opened" },
   ];
 
   return (
@@ -25,37 +31,58 @@ const AboutPage = () => {
       <section className="relative bg-gradient-to-br from-blue-900 via-primary-800 to-indigo-900 text-white py-6 md:py-8 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 20% 50%, white 1px, transparent 1px), radial-gradient(circle at 80% 80%, white 1px, transparent 1px)',
-            backgroundSize: '50px 50px'
-          }}></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 20% 50%, white 1px, transparent 1px), radial-gradient(circle at 80% 80%, white 1px, transparent 1px)",
+              backgroundSize: "50px 50px",
+            }}
+          ></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* School Logo */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
-              About <span className="text-yellow-400 text-glow">Adarsh Children's</span><br />
+              About{" "}
+              <span className="text-yellow-400 text-glow">
+                Adarsh Children's
+              </span>
+              <br />
               Senior Secondary School
             </h1>
 
             <p className="text-base md:text-xl lg:text-2xl text-blue-100 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto px-2">
-              A premier educational institution committed to providing quality education and nurturing future leaders since 2012
+              A premier educational institution committed to providing quality
+              education and nurturing future leaders since 2012
             </p>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10 max-w-md mx-auto">
               <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
-                <div className="text-2xl md:text-4xl font-bold text-yellow-400">12+</div>
-                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">Years</div>
+                <div className="text-2xl md:text-4xl font-bold text-yellow-400">
+                  12+
+                </div>
+                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">
+                  Years
+                </div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
-                <div className="text-2xl md:text-4xl font-bold text-yellow-400">2500+</div>
-                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">Students</div>
+                <div className="text-2xl md:text-4xl font-bold text-yellow-400">
+                  2500+
+                </div>
+                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">
+                  Students
+                </div>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-4 text-center border border-white/20 hover:bg-white/20 transition-all">
-                <div className="text-2xl md:text-4xl font-bold text-yellow-400">1000+</div>
-                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">Alumni</div>
+                <div className="text-2xl md:text-4xl font-bold text-yellow-400">
+                  1000+
+                </div>
+                <div className="text-xs md:text-sm text-blue-200 uppercase tracking-wider">
+                  Alumni
+                </div>
               </div>
             </div>
 
@@ -77,18 +104,30 @@ const AboutPage = () => {
           </div>
 
           {/* Awards Banner */}
-          <div className="mt-8 md:mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <div
+            className="mt-8 md:mt-12 text-center animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
             <div className="inline-flex flex-wrap items-center justify-center gap-2 md:gap-3 bg-yellow-400 text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-full font-bold shadow-lg max-w-full mx-auto">
               <FaTrophy className="text-lg md:text-xl flex-shrink-0" />
-              <span className="text-xs md:text-base">Best Principal Award 2024 • In Top 1000 Schools in India</span>
+              <span className="text-xs md:text-base">
+                Best Principal Award 2024 • In Top 1000 Schools in India
+              </span>
             </div>
           </div>
         </div>
 
         {/* Wave Divider */}
         <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white" />
+          <svg
+            viewBox="0 0 1440 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+              fill="white"
+            />
           </svg>
         </div>
       </section>
@@ -106,24 +145,47 @@ const AboutPage = () => {
               ref={storyRef}
               className="grid md:grid-cols-2 gap-12 items-center mb-16"
             >
-              <div className={`transition-all duration-1000 ${storyVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
-                }`}>
+              <div
+                className={`transition-all duration-1000 ${
+                  storyVisible
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 -translate-x-20"
+                }`}
+              >
                 <h2 className="text-4xl font-bold text-primary-800 mb-6">
                   <FaHistory className="inline-block mr-3 text-primary-600" />
                   Our Story
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Founded in 2012 in Bhankrota, Jaipur, the story of Adarsh Children's Senior Secondary School is one of extraordinary courage. It began with <strong>Mr. Hemraj Sharma</strong>, a man who started his journey sitting under a tree with barely any resources but an unshakeable belief in education.
+                  Founded in 2012 in Bhankrota, Jaipur, the story of Adarsh
+                  Children's Senior Secondary School is one of extraordinary
+                  courage. It began with <strong>Mr. Hemraj Sharma</strong>, a
+                  man who started his journey sitting under a tree with barely
+                  any resources but an unshakeable belief in education.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  In those early days, he played every role a school needed—bus driver at 4 AM, caretaker at dawn, manager through the morning, government school teacher by noon, and free tutor for students in the evening—a tireless routine he followed to build this legacy.
+                  In those early days, he played every role a school needed—bus
+                  driver at 4 AM, caretaker at dawn, manager through the
+                  morning, government school teacher by noon, and free tutor for
+                  students in the evening—a tireless routine he followed to
+                  build this legacy.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Alongside him, <strong>Mrs. Preeti Shrivastava</strong> shaped the school's identity with discipline and values. Today, we serve over 30,000 students across two campuses, producing 7-8 doctors and 3-5 engineers every year. Our mission remains the same: quality education for every student, where learning always comes before everything else.
+                  Alongside him, <strong>Mrs. Preeti Shrivastava</strong> shaped
+                  the school's identity with discipline and values. Today, we
+                  serve over 30,000 students across two campus, producing 7-8
+                  doctors and 3-5 engineers every year. Our mission remains the
+                  same: quality education for every student, where learning
+                  always comes before everything else.
                 </p>
               </div>
-              <div className={`relative transition-all duration-1000 delay-300 ${storyVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
-                }`}>
+              <div
+                className={`relative transition-all duration-1000 delay-300 ${
+                  storyVisible
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 translate-x-20"
+                }`}
+              >
                 <div className="grid grid-cols-2 gap-4">
                   <img
                     src="/images/gallery/photo_2026-02-05 18.29.13.jpeg"
@@ -145,34 +207,58 @@ const AboutPage = () => {
             </div>
 
             {/* Mission, Vision, Values */}
-            <div
-              ref={visionRef}
-              className="grid md:grid-cols-3 gap-8 mb-16"
-            >
-              <div className={`bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl transition-all duration-700 ${visionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-                }`}>
+            <div ref={visionRef} className="grid md:grid-cols-3 gap-8 mb-16">
+              <div
+                className={`bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl transition-all duration-700 ${
+                  visionVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
                 <FaBullseye className="text-4xl text-primary-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  Our Mission
+                </h3>
                 <p className="text-gray-600">
-                  To provide quality education that empowers students to become responsible global citizens with strong moral values and academic excellence.
+                  To provide quality education that empowers students to become
+                  responsible global citizens with strong moral values and
+                  academic excellence.
                 </p>
               </div>
 
-              <div className={`bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl transition-all duration-700 delay-150 ${visionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-                }`}>
+              <div
+                className={`bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl transition-all duration-700 delay-150 ${
+                  visionVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
                 <FaEye className="text-4xl text-purple-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  Our Vision
+                </h3>
                 <p className="text-gray-600">
-                  To be a leading educational institution recognized for academic excellence, innovation, and holistic development of students.
+                  To be a leading educational institution recognized for
+                  academic excellence, innovation, and holistic development of
+                  students.
                 </p>
               </div>
 
-              <div className={`bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl transition-all duration-700 delay-300 ${visionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-                }`}>
+              <div
+                className={`bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl transition-all duration-700 delay-300 ${
+                  visionVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-20"
+                }`}
+              >
                 <FaHeart className="text-4xl text-orange-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  Our Values
+                </h3>
                 <p className="text-gray-600">
-                  Integrity, Excellence, Compassion, Innovation, and Respect form the foundation of everything we do at Adarsh Children's Senior Secondary School.
+                  Integrity, Excellence, Compassion, Innovation, and Respect
+                  form the foundation of everything we do at Adarsh Children's
+                  Senior Secondary School.
                 </p>
               </div>
             </div>
@@ -182,16 +268,28 @@ const AboutPage = () => {
               ref={timelineRef}
               className="bg-gray-50 rounded-2xl p-8 md:p-12"
             >
-              <h2 className={`text-3xl font-bold text-center text-primary-800 mb-12 transition-all duration-700 ${timelineVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}>Our Journey</h2>
+              <h2
+                className={`text-3xl font-bold text-center text-primary-800 mb-12 transition-all duration-700 ${
+                  timelineVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
+                }`}
+              >
+                Our Journey
+              </h2>
               <div className="space-y-6">
                 {timeline.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex items-center space-x-4 transition-all duration-700 ${timelineVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
-                      }`}
+                    className={`flex items-center space-x-4 transition-all duration-700 ${
+                      timelineVisible
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-20"
+                    }`}
                     style={{
-                      transitionDelay: timelineVisible ? `${200 + index * 100}ms` : '0ms'
+                      transitionDelay: timelineVisible
+                        ? `${200 + index * 100}ms`
+                        : "0ms",
                     }}
                   >
                     <div className="bg-gradient-accent text-white font-bold px-4 py-2 rounded-full whitespace-nowrap">
@@ -212,10 +310,15 @@ const AboutPage = () => {
       <Leadership />
 
       {/* Old Leadership Section (hidden) */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50" style={{ display: 'none' }}>
+      <section
+        className="py-20 bg-gradient-to-b from-white to-gray-50"
+        style={{ display: "none" }}
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary-800 mb-4">Leadership</h2>
+            <h2 className="text-4xl font-bold text-primary-800 mb-4">
+              Leadership
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Guided by visionary leaders committed to educational excellence
             </p>
@@ -235,18 +338,22 @@ const AboutPage = () => {
                   src="/images/leadership/principal-suresh-yadav.png"
                   alt="Principal Preeti Shrivastava"
                   className="w-full h-full object-cover object-top rounded-full border-4 border-yellow-400 shadow-lg scale-110"
-                  style={{ objectPosition: 'center 20%' }}
+                  style={{ objectPosition: "center 20%" }}
                 />
                 <div className="absolute -bottom-2 -right-2 bg-yellow-400 text-yellow-900 w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
                   <FaTrophy className="text-xl" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-1">Principal Preeti Shrivastava</h3>
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-1">
+                Principal Preeti Shrivastava
+              </h3>
               <p className="text-yellow-600 dark:text-yellow-400 font-semibold mb-3">
                 🏆 Best Principal Award Winner
               </p>
               <p className="text-gray-600 dark:text-gray-300 italic mb-2">
-                "Education is not preparation for life; education is life itself. At Adarsh Children's Senior Secondary School, we strive to make every moment a learning opportunity."
+                "Education is not preparation for life; education is life
+                itself. At Adarsh Children's Senior Secondary School, we strive
+                to make every moment a learning opportunity."
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Selected In Top 1000 out of 15 Lakh Schools
@@ -257,9 +364,14 @@ const AboutPage = () => {
               <div className="w-32 h-32 bg-gradient-accent rounded-full mx-auto mb-4 flex items-center justify-center">
                 <FaHeart className="text-5xl text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                Our Vision
+              </h3>
               <p className="text-gray-600 dark:text-gray-300 italic">
-                "Our commitment is to provide an environment where every child discovers their potential and develops into a confident, capable individual. We aim to nurture not just students, but future leaders."
+                "Our commitment is to provide an environment where every child
+                discovers their potential and develops into a confident, capable
+                individual. We aim to nurture not just students, but future
+                leaders."
               </p>
             </div>
           </div>
@@ -271,24 +383,48 @@ const AboutPage = () => {
             </h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">38</div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">Gold Medals</div>
-                <div className="text-xs text-gray-500 dark:text-gray-400">SOF Olympiad</div>
+                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">
+                  38
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">
+                  Gold Medals
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">
+                  SOF Olympiad
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">5</div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">Black Belts</div>
-                <div className="text-xs text-gray-500 dark:text-gray-400">Karate</div>
+                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">
+                  5
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">
+                  Black Belts
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">
+                  Karate
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">25</div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">Sports Medals</div>
-                <div className="text-xs text-gray-500 dark:text-gray-400">District Level</div>
+                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">
+                  25
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">
+                  Sports Medals
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">
+                  District Level
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">90%+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-300">Board Results</div>
-                <div className="text-xs text-gray-500 dark:text-gray-400">29 Students</div>
+                <div className="text-3xl font-bold text-primary-600 dark:text-accent-400">
+                  90%+
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">
+                  Board Results
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">
+                  29 Students
+                </div>
               </div>
             </div>
           </div>
