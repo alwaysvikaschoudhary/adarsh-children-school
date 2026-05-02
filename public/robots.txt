@@ -1,0 +1,8 @@
+# robots.txt for Adarsh Children's Senior Secondary School
+# https://www.shreekrishnaschools.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://adarshchildrensschool.com/sitemap.xml

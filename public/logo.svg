@@ -1,0 +1,17 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#1e40af"/>
+  <circle cx="100" cy="100" r="85" fill="#3b82f6"/>
+  
+  <!-- Book Icon -->
+  <path d="M60 70 L60 140 L100 130 L140 140 L140 70 L100 80 Z" fill="white" stroke="#fbbf24" stroke-width="3"/>
+  <line x1="100" y1="80" x2="100" y2="130" stroke="#fbbf24" stroke-width="3"/>
+  
+  <!-- Graduation Cap -->
+  <polygon points="100,50 60,65 100,80 140,65" fill="#fbbf24"/>
+  <rect x="95" y="80" width="10" height="30" fill="#fbbf24"/>
+  <circle cx="100" cy="115" r="5" fill="#fbbf24"/>
+  
+  <!-- School Initials -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">SK</text>
+</svg>

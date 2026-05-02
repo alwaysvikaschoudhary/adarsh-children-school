@@ -1,0 +1,115 @@
+{
+  "site": {
+    "name": "Adarsh Children's Senior Secondary School",
+    "tagline": "Excellence in Education",
+    "description": "Premier educational institution in Jaipur, Rajasthan providing quality education.",
+    "email": "adarshchildrenschool@gmail.com",
+    "phone": "+918947097731",
+    "phone2": "+918947097731",
+    "admissionsEmail": "adarshchildrenschool@gmail.com",
+    "whatsapp": "+918947097731"
+  },
+  "campuses": [
+    {
+      "id": "main",
+      "name": "Adarsh Children's Senior Secondary School",
+      "tagline": "Main Campus",
+      "address": "Near Radhika Marriage Garden, Mukundpura Road, Bhankrota, Jaipur, Rajasthan",
+      "pincode": "302026",
+      "googleId": "Bhankrota",
+      "classes": "Classes nursery-12",
+      "curriculum": "RBSE Affiliated"
+    },
+    {
+      "id": "little",
+      "name": "Adarsh Children's Early Years",
+      "tagline": "Early Years Campus",
+      "address": "Near Radhika Marriage Garden, Mukundpura Road, Bhankrota, Jaipur, Rajasthan",
+      "pincode": "302026",
+      "googleId": "Bhankrota",
+      "classes": "Pre-Nursery to Class 5",
+      "curriculum": "Play-Based Learning"
+    }
+  ],
+  "about": {
+    "mission": "Shaping Tomorrow's Leaders Today",
+    "description": "Founded in 2012, Adarsh Children's Senior Secondary School began with a vision to provide quality education where values come before money. Over the years, it has transformed into a legacy of excellence, nurturing students who excel in both academics and life.",
+    "yearsOfExcellence": "12+",
+    "highlights": [
+      "7-8 Doctors produced every year",
+      "3-5 Engineers produced annually",
+      "Gold in Games for 4 consecutive years",
+      "RBSE Affiliated Institution",
+      "Disciplined & Value-Based Learning",
+      "Outstanding Board Results (Class 5, 8, 10, 12)"
+    ]
+  },
+  "stats": {
+    "students": "30000+",
+    "parents": "3000+",
+    "faculty": "30+",
+    "years": "12+",
+    "successRate": "95%",
+    "doctors": "7-8/yr",
+    "engineers": "3-5/yr",
+    "medals": {
+      "gold": "38",
+      "blackBelts": "5",
+      "sports": "25",
+      "period": "In a Single Year"
+    }
+  },
+  "socialMedia": {
+    "facebook": "#",
+    "twitter": "#",
+    "instagram": "#",
+    "youtube": "#",
+    "whatsapp": "#"
+  },
+  "seo": {
+    "title": "Adarsh Children's Senior Secondary School - Excellence in Education | Jaipur, Rajasthan",
+    "metaDescription": "Adarsh Children's Senior Secondary School - Premier educational institution in Jaipur, Rajasthan. Quality education for holistic development.",
+    "keywords": "Adarsh Children's Senior Secondary School, Jaipur, Rajasthan, School, Education, Admissions"
+  },
+  "admissions": {
+    "status": "Open for 2026-27",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Enquiry",
+        "description": "Fill the online form or visit our campus"
+      },
+      {
+        "number": "02",
+        "title": "Campus Tour",
+        "description": "Schedule a guided tour of our facilities"
+      },
+      {
+        "number": "03",
+        "title": "Application",
+        "description": "Submit the completed application form"
+      },
+      {
+        "number": "04",
+        "title": "Assessment",
+        "description": "Age-appropriate interaction/assessment"
+      },
+      {
+        "number": "05",
+        "title": "Admission",
+        "description": "Complete formalities and join us"
+      }
+    ]
+  },
+  "facilities": [
+    "Modern Library",
+    "Science Labs",
+    "Computer Lab",
+    "Sports Complex",
+    "Art Studio",
+    "Music Room",
+    "Auditorium",
+    "Medical Room",
+    "Transport"
+  ]
+}

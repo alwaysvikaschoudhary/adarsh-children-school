@@ -1,0 +1,24 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="800" fill="#f3f4f6"/>
+  
+  <!-- Circle background -->
+  <circle cx="400" cy="320" r="120" fill="#e5e7eb"/>
+  
+  <!-- Person icon -->
+  <circle cx="400" cy="290" r="50" fill="#9ca3af"/>
+  <path d="M 400 340 Q 400 340 400 340 C 320 340 280 380 280 430 L 520 430 C 520 380 480 340 400 340 Z" fill="#9ca3af"/>
+  
+  <!-- Text -->
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="32" fill="#6b7280" text-anchor="middle" font-weight="bold">
+    Director's Photo
+  </text>
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="24" fill="#9ca3af" text-anchor="middle">
+    Coming Soon
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="400" cy="650" r="8" fill="#3b82f6"/>
+  <circle cx="430" cy="650" r="8" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="370" cy="650" r="8" fill="#3b82f6" opacity="0.6"/>
+</svg>
