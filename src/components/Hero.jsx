@@ -8,12 +8,13 @@ import 'swiper/css/effect-fade';
 
 const Hero = () => {
   const images = [
-    '/images/Leaderboard/leaderboard_1.png',
-    '/images/Leaderboard/leaderboard_2.png',
-    '/images/Leaderboard/leaderboard_3.png',
-    '/images/Leaderboard/leaderboard_4.png',
-    '/images/Leaderboard/leaderboard_5.png',
-    '/images/Leaderboard/leaderboard_6.png',
+    '/images/Leaderboard/Leaderboard_0.png',
+    '/images/Leaderboard/Leaderboard_1.png',
+    '/images/Leaderboard/Leaderboard_2.png',
+    '/images/Leaderboard/Leaderboard_3.png',
+    '/images/Leaderboard/Leaderboard_4.png',
+    '/images/Leaderboard/Leaderboard_5.png',
+    '/images/Leaderboard/Leaderboard_6.png',
   ];
 
   return (
@@ -35,7 +36,7 @@ const Hero = () => {
               <img
                 src={img}
                 alt={`Leaderboard Slide ${index + 1}`}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-top"
                 loading={index === 0 ? "eager" : "lazy"}
               />
             </div>

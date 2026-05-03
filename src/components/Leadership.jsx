@@ -18,9 +18,9 @@ const Leadership = () => {
       message: '"Education is not about profits, but about values, discipline, and the future of every child. Here, learning comes before everything."'
     },
     {
-      name: 'Mr. Birendra Singh Yadav',
-      role: 'Managing Director',
-      image: '/images/leadership/managing-director.png',
+      name: 'Mr. Hemraj Sharma',
+      role: 'Director',
+      image: '/images/leadership/director.png',
       award: 'Visionary Founder',
       organization: 'Legacy of Hope',
       achievement: 'From Zero to a Legacy',
@@ -30,7 +30,7 @@ const Leadership = () => {
     },
     {
       name: 'Mr. Bhanwar Singh',
-      role: 'Director',
+      role: 'Managing Director',
       image: '/images/leadership/director.png',
       award: 'Educational Benchmark',
       organization: 'Innovation Leader',
