@@ -8,13 +8,13 @@ import 'swiper/css/effect-fade';
 
 const Hero = () => {
   const images = [
-    '/images/Leaderboard/Leaderboard_0.png',
-    '/images/Leaderboard/Leaderboard_1.png',
-    '/images/Leaderboard/Leaderboard_2.png',
-    '/images/Leaderboard/Leaderboard_3.png',
-    '/images/Leaderboard/Leaderboard_4.png',
-    '/images/Leaderboard/Leaderboard_5.png',
-    '/images/Leaderboard/Leaderboard_6.png',
+    '/images/Leaderboard/leaderboard_0.png',
+    '/images/Leaderboard/leaderboard_1.png',
+    '/images/Leaderboard/leaderboard_2.png',
+    '/images/Leaderboard/leaderboard_3.png',
+    '/images/Leaderboard/leaderboard_4.png',
+    '/images/Leaderboard/leaderboard_5.png',
+    '/images/Leaderboard/leaderboard_6.png',
   ];
 
   return (
