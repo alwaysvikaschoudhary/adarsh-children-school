@@ -330,24 +330,24 @@ const Achievements = () => {
     },
     {
       icon: FaMedal,
-      title: "🥇 38 Gold Medals",
-      description: "Won in a Single Year",
+      title: "🥇 18 Gold Medals",
+      description: "5 in a Single Year",
       subtitle: "SOF International Olympiad",
       color: "from-blue-400 to-blue-600",
       stats: "English: 12 | Science: 09 | Math: 17",
     },
     {
       icon: FaStar,
-      title: "🥋 5 Black Belts",
-      description: "Achieved in a Single Year",
+      title: "🥋 8 Black Belts",
+      description: "3 in a Single Year",
       subtitle: "Okinawa Shorin-Ryu Karate",
       color: "from-red-400 to-red-600",
       stats: "Exceptional Discipline & Skill",
     },
     {
       icon: FaAward,
-      title: "🎖️ 25 Sports Medals",
-      description: "Won in a Single Year",
+      title: "🎖️ 28 Sports Medals",
+      description: "12 in a Single Year",
       subtitle: "District & State Level Games",
       color: "from-green-400 to-green-600",
       stats: "68th District Level Champion",
@@ -486,42 +486,8 @@ const Achievements = () => {
           <h3
             className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${cardsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            🏆 Major Milestones (In a Single Year)
+            🏆 Major Milestones
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div
-              className={`bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
-            >
-              <div className="text-6xl font-bold mb-2">38</div>
-              <div className="text-2xl font-semibold mb-2">Gold Medals</div>
-              <div className="text-lg opacity-90 mb-2">In a Single Year</div>
-              <div className="text-sm opacity-80">
-                SOF International Olympiad
-              </div>
-            </div>
-            <div
-              className={`bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
-              style={{ transitionDelay: "200ms" }}
-            >
-              <div className="text-6xl font-bold mb-2">5</div>
-              <div className="text-2xl font-semibold mb-2">Black Belts</div>
-              <div className="text-lg opacity-90 mb-2">In a Single Year</div>
-              <div className="text-sm opacity-80">
-                Okinawa Shorin-Ryu Karate
-              </div>
-            </div>
-            <div
-              className={`bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-8 text-white text-center shadow-xl card-hover transition-all duration-700 ${cardsVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
-              style={{ transitionDelay: "400ms" }}
-            >
-              <div className="text-6xl font-bold mb-2">25</div>
-              <div className="text-2xl font-semibold mb-2">Sports Medals</div>
-              <div className="text-lg opacity-90 mb-2">In a Single Year</div>
-              <div className="text-sm opacity-80">
-                District Level Excellence
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Major Achievements Grid (Existing) */}

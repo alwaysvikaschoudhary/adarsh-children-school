@@ -39,8 +39,8 @@ const About = () => {
   ];
 
   const highlights = [
-    "🥇 38 Gold Medals in a Single Year",
-    "🥋 5 Black Belts & 🎖️ 25 Medals (Single Year)",
+    "🥇 18 Gold Medals in a Single Year",
+    "🥋 9 Black Belts & 🎖️ 28 Medals (Single Year)",
     "7-8 Doctors produced every year",
     "3-5 Engineers produced annually",
     "Gold in Games for 4 consecutive years",
