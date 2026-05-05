@@ -53,7 +53,7 @@ const campus = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-6"></div>
           <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-            Two world-class campus designed to provide the best learning
+            World-class campus designed to provide the best learning
             environment for every age group
           </p>
         </div>
@@ -137,14 +137,11 @@ const campus = () => {
                   </div>
 
                   {/* Contact Info */}
-                  <div className="space-y-3 mb-6">
+                  <div className="space-y-1 mb-6">
                     <div className="flex items-start space-x-3">
                       <FaMapMarkerAlt className="text-primary-600 mt-1 flex-shrink-0" />
                       <div>
                         <span className="text-gray-700">{campus.address}</span>
-                        <p className="text-sm text-gray-500 mt-1">
-                          PIN: {campus.pincode} • Google ID: {campus.googleId}
-                        </p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">

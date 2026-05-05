@@ -8,6 +8,9 @@ import {
   FaMapMarkerAlt,
   FaArrowUp,
   FaHeart,
+  FaYoutube,
+  FaLinkedin,
+  FaTwitter,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -47,22 +50,42 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      icon: FaInstagram,
-      url: "https://www.instagram.com/shree_krishna_publicudairamsar/",
-      color:
-        "hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-600 hover:to-orange-500",
-      bgColor:
-        "bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-orange-500/20",
-      label: "Adarsh Children's Senior Secondary School Instagram",
-      badge: "acs",
-    },
-    {
       icon: FaFacebook,
-      url: "https://www.facebook.com/acsudairamsar/",
+      url: "https://www.facebook.com/profile.php?id=100057339584443",
       color: "hover:bg-blue-600",
       bgColor: "bg-blue-500/20",
       label: "Facebook",
     },
+    {
+      icon: FaYoutube,
+      url: "https://www.youtube.com/",
+      color: "hover:bg-red-600",
+      bgColor: "bg-red-500/20",
+      label: "YouTube",
+    },
+    {
+      icon: FaInstagram,
+      url: "https://www.instagram.com/",
+      color:
+        "hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-600 hover:to-orange-500",
+      bgColor:
+        "bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-orange-500/20",
+      label: "Instagram",
+    },
+    {
+      icon: FaLinkedin,
+      url: "https://www.linkedin.com/",
+      color: "hover:bg-blue-600",
+      bgColor: "bg-blue-500/20",
+      label: "LinkedIn",
+    },
+    {
+      icon: FaTwitter,
+      url: "https://twitter.com/",
+      color: "hover:bg-sky-500",
+      bgColor: "bg-sky-500/20",
+      label: "Twitter",
+    }
   ];
 
   return (
@@ -190,7 +213,7 @@ const Footer = () => {
                   <p className="font-semibold text-white mb-1">Our Location:</p>
                   <p className="leading-relaxed">
                     Adarsh Children's Sr. Sec. School, Near Radhika Marriage
-                    Garden, Bhankrota, Rajasthan 302026
+                    Garden, Bhankrota, Rajasthan - 302026
                   </p>
                   <a
                     href="https://www.google.com/maps/place/Adarsh+childrens+sr.+Sec.+School/@26.8758898,75.6873726,17z/data=!3m1!4b1!4m6!3m5!1s0x396c4b10414390ef:0xba16854dc4280343!8m2!3d26.8758898!4d75.6873726!16s%2Fg%2F11t6yp80w_"
@@ -208,7 +231,7 @@ const Footer = () => {
                   href="tel:+918947097731"
                   className="text-gray-400 hover:text-white transition text-sm leading-relaxed"
                 >
-                  8947097731
+                  +91-8947097731
                 </a>
               </div>
               <div className="flex items-start gap-3">

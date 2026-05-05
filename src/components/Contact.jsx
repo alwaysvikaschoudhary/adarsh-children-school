@@ -25,7 +25,7 @@ const Contact = () => {
     {
       icon: FaPhone,
       title: 'Phone',
-      details: ['+918947097731', 'Available: Mon-Sat, 8 AM - 2 PM'],
+      details: ['+918947097731', 'Available: Mon-Sat, 8 AM - 4 PM'],
       color: 'text-green-600',
       bgColor: 'bg-green-100',
       link: 'tel:+918947097731',
@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: FaMapMarkerAlt,
       title: 'Main Campus',
-      details: ['Near Radhika Marriage Garden, Bhankrota', 'Rajasthan 302026'],
+      details: ['Near Radhika Marriage Garden, Bhankrota, Rajasthan 302026'],
       color: 'text-red-600',
       bgColor: 'bg-red-100',
       link: 'https://www.google.com/maps/place/Adarsh+childrens+sr.+Sec.+School/@26.8758898,75.6873726,17z/data=!3m1!4b1!4m6!3m5!1s0x396c4b10414390ef:0xba16854dc4280343!8m2!3d26.8758898!4d75.6873726!16s%2Fg%2F11t6yp80w_',
