@@ -321,7 +321,7 @@ const Achievements = () => {
     {
       icon: FaTrophy,
       title: "Best Principal Award",
-      description: "In Top 1000 Schools out of 15 Lakh Schools",
+      description: "Top 1000 Schools out of 15 Lakh Schools",
       subtitle: "Indian Talent Olympiad Recognition",
       image:
         "/images/achievements/WhatsApp_Image_2025-12-02_at_18.32.52-e978874f-94e5-4cda-a7c9-56bd65e6cdd6.png",
@@ -330,7 +330,7 @@ const Achievements = () => {
     },
     {
       icon: FaMedal,
-      title: "🥇 18 Gold Medals",
+      title: "18 Gold Medals 🥇",
       description: "5 in a Single Year",
       subtitle: "SOF International Olympiad",
       color: "from-blue-400 to-blue-600",
@@ -338,7 +338,7 @@ const Achievements = () => {
     },
     {
       icon: FaStar,
-      title: "🥋 8 Black Belts",
+      title: "8 Black Belts 🥋",
       description: "3 in a Single Year",
       subtitle: "Okinawa Shorin-Ryu Karate",
       color: "from-red-400 to-red-600",
@@ -346,7 +346,7 @@ const Achievements = () => {
     },
     {
       icon: FaAward,
-      title: "🎖️ 28 Sports Medals",
+      title: "28 Sports Medals 🎖️",
       description: "12 in a Single Year",
       subtitle: "District & State Level Games",
       color: "from-green-400 to-green-600",
@@ -486,7 +486,7 @@ const Achievements = () => {
           <h3
             className={`text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 transition-all duration-700 ${cardsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            🏆 Major Milestones
+            Major Milestones 🏆
           </h3>
         </div>
 
@@ -513,32 +513,38 @@ const Achievements = () => {
               ></div>
 
               {/* Content */}
-              <div className="relative p-6">
-                {/* Icon */}
-                <div
-                  className={`w-16 h-16 bg-gradient-to-br ${achievement.color} rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}
-                >
-                  <achievement.icon className="text-3xl text-white" />
+              <div className="relative p-6 h-full flex flex-col">
+                <div className="flex justify-between items-start gap-4 mb-4">
+                  <div className="flex-1">
+                    {/* Title */}
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 leading-tight">
+                      {achievement.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-primary-600 dark:text-accent-400 font-bold mb-1">
+                      {achievement.description}
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {achievement.subtitle}
+                    </p>
+                  </div>
+
+                  {/* Icon - Right Side */}
+                  <div
+                    className={`w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br ${achievement.color} rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg`}
+                  >
+                    <achievement.icon className="text-2xl md:text-3xl text-white" />
+                  </div>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
-                  {achievement.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-primary-600 dark:text-accent-400 font-semibold mb-1">
-                  {achievement.description}
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                  {achievement.subtitle}
-                </p>
-
-                {/* Stats */}
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
-                  <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    {achievement.stats}
-                  </p>
+                <div className="mt-auto">
+                  {/* Stats */}
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
+                    <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      {achievement.stats}
+                    </p>
+                  </div>
                 </div>
               </div>
 
