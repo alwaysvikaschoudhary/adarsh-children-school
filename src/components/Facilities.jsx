@@ -163,8 +163,8 @@ const Facilities = () => {
               <div className="text-sm md:text-lg font-bold text-blue-100 uppercase tracking-widest">Laboratories</div>
             </div>
             <div className="group">
-              <div className="text-4xl md:text-6xl font-black mb-2 text-yellow-400 group-hover:scale-110 transition-transform">5 Acres</div>
-              <div className="text-sm md:text-lg font-bold text-blue-100 uppercase tracking-widest">Campus Area</div>
+              <div className="text-4xl md:text-6xl font-black mb-2 text-yellow-400 group-hover:scale-110 transition-transform">5</div>
+              <div className="text-sm md:text-lg font-bold text-blue-100 uppercase tracking-widest">Acres Campus</div>
             </div>
             <div className="group">
               <div className="text-4xl md:text-6xl font-black mb-2 text-yellow-400 group-hover:scale-110 transition-transform">24/7</div>

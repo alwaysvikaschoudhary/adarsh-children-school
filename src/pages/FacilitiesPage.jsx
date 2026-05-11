@@ -73,8 +73,8 @@ const FacilitiesPage = () => {
                   <div className="text-xs text-purple-200">Labs</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-400">5 Acres</div>
-                  <div className="text-xs text-purple-200">Campus</div>
+                  <div className="text-2xl md:text-3xl font-bold text-pink-400">5</div>
+                  <div className="text-xs text-purple-200">Acres Campus</div>
                 </div>
               </div>
 
