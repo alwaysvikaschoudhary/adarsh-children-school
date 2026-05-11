@@ -209,17 +209,19 @@ const AboutPage = () => {
             {/* Mission, Vision, Values */}
             <div ref={visionRef} className="grid md:grid-cols-3 gap-8 mb-16">
               <div
-                className={`bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl transition-all duration-700 ${
+                className={`bg-gradient-to-br from-blue-50 to-blue-100 p-5 rounded-2xl transition-all duration-700 ${
                   visionVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-20"
                 }`}
               >
-                <FaBullseye className="text-4xl text-primary-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Our Mission
-                </h3>
-                <p className="text-gray-600">
+                <div className="flex items-center gap-3 mb-3">
+                  <FaBullseye className="text-3xl text-primary-600" />
+                  <h3 className="text-xl font-bold text-gray-800">
+                    Our Mission
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
                   To provide quality education that empowers students to become
                   responsible global citizens with strong moral values and
                   academic excellence.
@@ -227,17 +229,19 @@ const AboutPage = () => {
               </div>
 
               <div
-                className={`bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl transition-all duration-700 delay-150 ${
+                className={`bg-gradient-to-br from-purple-50 to-purple-100 p-5 rounded-2xl transition-all duration-700 delay-150 ${
                   visionVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-20"
                 }`}
               >
-                <FaEye className="text-4xl text-purple-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Our Vision
-                </h3>
-                <p className="text-gray-600">
+                <div className="flex items-center gap-3 mb-3">
+                  <FaEye className="text-3xl text-purple-600" />
+                  <h3 className="text-xl font-bold text-gray-800">
+                    Our Vision
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
                   To be a leading educational institution recognized for
                   academic excellence, innovation, and holistic development of
                   students.
@@ -245,17 +249,19 @@ const AboutPage = () => {
               </div>
 
               <div
-                className={`bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl transition-all duration-700 delay-300 ${
+                className={`bg-gradient-to-br from-orange-50 to-orange-100 p-5 rounded-2xl transition-all duration-700 delay-300 ${
                   visionVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-20"
                 }`}
               >
-                <FaHeart className="text-4xl text-orange-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Our Values
-                </h3>
-                <p className="text-gray-600">
+                <div className="flex items-center gap-3 mb-3">
+                  <FaHeart className="text-3xl text-orange-600" />
+                  <h3 className="text-xl font-bold text-gray-800">
+                    Our Values
+                  </h3>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
                   Integrity, Excellence, Compassion, Innovation, and Respect
                   form the foundation of everything we do at Adarsh Children's
                   Senior Secondary School.
