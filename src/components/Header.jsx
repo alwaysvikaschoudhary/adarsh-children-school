@@ -4,15 +4,30 @@ import { FaBars, FaTimes, FaPhone, FaEnvelope, FaChevronDown } from 'react-icons
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const lastScrollY = React.useRef(0);
   const location = useLocation();
 
   // Handle scroll detection
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+      
+      // Show navbar if scrolling up or at the top
+      if (currentScrollY < lastScrollY.current || currentScrollY < 10) {
+        setIsVisible(true);
+      } 
+      // Hide navbar if scrolling down and scrolled past a threshold
+      else if (currentScrollY > lastScrollY.current && currentScrollY > 150) {
+        setIsVisible(false);
+      }
+      
+      lastScrollY.current = currentScrollY;
+      setIsScrolled(currentScrollY > 50);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -95,7 +110,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 left-0 right-0 w-full z-50 bg-white shadow-md border-b border-gray-100">
+    <header className={`fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-md border-b border-gray-100 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       {/* Main Navigation */}
       <nav className="w-full px-4 py-3 md:py-4 relative z-50 bg-white">
         <div className="max-w-7xl mx-auto flex items-center justify-between">

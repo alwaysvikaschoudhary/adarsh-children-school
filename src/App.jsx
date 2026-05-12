@@ -33,7 +33,7 @@ function App() {
       <ScrollProgress />
       <div className="min-h-screen bg-gray-50 overflow-x-hidden">
         <Header />
-        <main id="main-content" className="overflow-x-hidden">
+        <main id="main-content" className="overflow-x-hidden pt-[72px] md:pt-[88px]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
