@@ -110,83 +110,85 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-md border-b border-gray-100 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      {/* Main Navigation */}
-      <nav className="w-full px-4 py-3 md:py-4 relative z-50 bg-white">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Logo Section */}
-          <Link to="/" className="flex items-center space-x-2 md:space-x-3 group min-w-0 lg:w-[25%] xl:w-auto">
-            <img
-              src="/logo.png"
-              alt="Adarsh Children's School Logo"
-              className="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:rotate-6 transition-transform flex-shrink-0"
-            />
-            <div className="flex flex-col min-w-0">
-              <h1 className="text-[12px] md:text-[14px] xl:text-base font-bold text-primary-900 leading-tight">
-                Adarsh Children's Sr. Sec. School
-              </h1>
-              <p className="text-[9px] md:text-[10px] text-gray-500 font-medium tracking-wide uppercase">Since 2012</p>
-            </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center justify-center flex-1 space-x-2 xl:space-x-4">
-            {navItems.map((item) => (
-              <div key={item.name} className="relative group">
-                {item.dropdown ? (
-                  <div className={`flex items-center cursor-pointer text-[13px] xl:text-[15px] font-semibold px-2 py-2 rounded-lg transition-all ${isRouteActive(item) ? 'text-primary-700' : 'text-gray-700 hover:text-primary-600'}`}>
-                    {item.name}
-                    <FaChevronDown className="ml-1 text-[10px] opacity-70 group-hover:rotate-180 transition-transform duration-300" />
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left group-hover:translate-y-2 z-50 py-2">
-                      {item.dropdown.map((subItem) => (
-                        <Link
-                          key={subItem.name}
-                          to={subItem.href}
-                          className={`block px-4 py-2 text-[13px] font-medium transition-colors ${location.pathname === subItem.href ? 'text-primary-600 bg-primary-50/50' : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50'}`}
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  <Link
-                    to={item.href}
-                    className={`text-[13px] xl:text-[15px] font-semibold px-2 py-2 rounded-lg transition-all whitespace-nowrap ${location.pathname === item.href
-                      ? 'text-primary-700'
-                      : 'text-gray-700 hover:text-primary-600'
-                      }`}
-                  >
-                    {item.name}
-                  </Link>
-                )}
+    <>
+      <header className={`fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-md border-b border-gray-100 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+        {/* Main Navigation */}
+        <nav className="w-full px-4 py-3 md:py-4 relative z-50 bg-white">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            {/* Logo Section */}
+            <Link to="/" className="flex items-center space-x-2 md:space-x-3 group min-w-0 lg:w-[25%] xl:w-auto">
+              <img
+                src="/logo.png"
+                alt="Adarsh Children's School Logo"
+                className="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:rotate-6 transition-transform flex-shrink-0"
+              />
+              <div className="flex flex-col min-w-0">
+                <h1 className="text-[12px] md:text-[14px] xl:text-base font-bold text-primary-900 leading-tight">
+                  Adarsh Children's Sr. Sec. School
+                </h1>
+                <p className="text-[9px] md:text-[10px] text-gray-500 font-medium tracking-wide uppercase">Since 2012</p>
               </div>
-            ))}
-          </div>
-
-          {/* CTA Section */}
-          <div className="hidden lg:flex items-center justify-end lg:w-[20%] xl:w-auto">
-            <Link
-              to="/admissions"
-              className="ml-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white px-5 py-2.5 rounded-xl text-[13px] font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all whitespace-nowrap"
-            >
-              Apply Now
             </Link>
-          </div>
 
-          <div className="flex lg:hidden items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 p-2 hover:bg-gray-100 rounded-xl transition-colors"
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-            </button>
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center justify-center flex-1 space-x-2 xl:space-x-4">
+              {navItems.map((item) => (
+                <div key={item.name} className="relative group">
+                  {item.dropdown ? (
+                    <div className={`flex items-center cursor-pointer text-[13px] xl:text-[15px] font-semibold px-2 py-2 rounded-lg transition-all ${isRouteActive(item) ? 'text-primary-700' : 'text-gray-700 hover:text-primary-600'}`}>
+                      {item.name}
+                      <FaChevronDown className="ml-1 text-[10px] opacity-70 group-hover:rotate-180 transition-transform duration-300" />
+                      
+                      {/* Dropdown Menu */}
+                      <div className="absolute top-full left-0 mt-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left group-hover:translate-y-2 z-50 py-2">
+                        {item.dropdown.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.href}
+                            className={`block px-4 py-2 text-[13px] font-medium transition-colors ${location.pathname === subItem.href ? 'text-primary-600 bg-primary-50/50' : 'text-gray-600 hover:text-primary-600 hover:bg-gray-50'}`}
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className={`text-[13px] xl:text-[15px] font-semibold px-2 py-2 rounded-lg transition-all whitespace-nowrap ${location.pathname === item.href
+                        ? 'text-primary-700'
+                        : 'text-gray-700 hover:text-primary-600'
+                        }`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* CTA Section */}
+            <div className="hidden lg:flex items-center justify-end lg:w-[20%] xl:w-auto">
+              <Link
+                to="/admissions"
+                className="ml-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white px-5 py-2.5 rounded-xl text-[13px] font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all whitespace-nowrap"
+              >
+                Apply Now
+              </Link>
+            </div>
+
+            <div className="flex lg:hidden items-center">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-600 p-2 hover:bg-gray-100 rounded-xl transition-colors"
+                aria-label="Toggle menu"
+              >
+                {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
       {/* Mobile Navigation Drawer */}
       <div
@@ -292,7 +294,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 
