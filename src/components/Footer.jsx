@@ -35,13 +35,12 @@ const Footer = () => {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "campus", href: "/campus" },
+    { name: "Admissions", href: "/admissions" },
     { name: "Facilities", href: "/facilities" },
   ];
 
   const importantLinks = [
     { name: "Achievements", href: "/achievements" },
-    { name: "Admissions", href: "/admissions" },
     { name: "Gallery", href: "/gallery" },
     { name: "Events", href: "/events" },
     { name: "Faculty", href: "/faculty" },
