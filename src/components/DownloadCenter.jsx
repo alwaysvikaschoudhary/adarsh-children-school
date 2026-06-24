@@ -10,11 +10,11 @@ const DownloadCenter = () => {
       name: 'Admission Form 2026-27',
       description: 'Download and fill the admission application form',
       icon: FaFilePdf,
-      size: '245 KB',
+      size: '',
       type: 'PDF',
       color: 'text-red-600',
       bgColor: 'bg-red-50 dark:bg-red-900/20',
-      downloadUrl: '#', // Replace with actual file URL
+      downloadUrl: 'https://drive.google.com/file/d/1GWm_ZVIvCyS8KvCk4vB9b0lLRky-lLPW/view?usp=sharing', // Replace with actual file URL
     },
     {
       name: 'School Prospectus',
@@ -24,7 +24,7 @@ const DownloadCenter = () => {
       type: 'PDF',
       color: 'text-blue-600',
       bgColor: 'bg-blue-50 dark:bg-blue-900/20',
-      downloadUrl: '#',
+      downloadUrl: 'https://drive.google.com/file/d/1GWm_ZVIvCyS8KvCk4vB9b0lLRky-lLPW/view?usp=sharing',
     },
     {
       name: 'Fee Structure 2026-27',
@@ -34,7 +34,7 @@ const DownloadCenter = () => {
       type: 'PDF',
       color: 'text-green-600',
       bgColor: 'bg-green-50 dark:bg-green-900/20',
-      downloadUrl: '#',
+      downloadUrl: 'https://drive.google.com/file/d/1GWm_ZVIvCyS8KvCk4vB9b0lLRky-lLPW/view?usp=sharing',
     },
     {
       name: 'Documents Required List',
@@ -44,7 +44,7 @@ const DownloadCenter = () => {
       type: 'DOC',
       color: 'text-indigo-600',
       bgColor: 'bg-indigo-50 dark:bg-indigo-900/20',
-      downloadUrl: '#',
+      downloadUrl: 'https://drive.google.com/file/d/1GWm_ZVIvCyS8KvCk4vB9b0lLRky-lLPW/view?usp=sharing',
     },
     {
       name: 'TC Format',
@@ -54,7 +54,7 @@ const DownloadCenter = () => {
       type: 'PDF',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50 dark:bg-purple-900/20',
-      downloadUrl: '#',
+      downloadUrl: 'https://drive.google.com/file/d/1GWm_ZVIvCyS8KvCk4vB9b0lLRky-lLPW/view?usp=sharing',
     },
     {
       name: 'School Calendar 2026-27',
@@ -64,22 +64,17 @@ const DownloadCenter = () => {
       type: 'PNG',
       color: 'text-orange-600',
       bgColor: 'bg-orange-50 dark:bg-orange-900/20',
-      downloadUrl: '#',
+      downloadUrl: 'https://drive.google.com/file/d/1GWm_ZVIvCyS8KvCk4vB9b0lLRky-lLPW/view?usp=sharing',
     },
   ];
 
   const handleDownload = (doc) => {
-    // In production, this would download the actual file
-    // For now, we'll show an alert
-    alert(`Downloading: ${doc.name}\n\nTo enable: Upload your ${doc.type} file to /public/documents/ folder and update downloadUrl in DownloadCenter.jsx`);
-    
-    // Uncomment below for actual downloads:
-    // const link = document.createElement('a');
-    // link.href = doc.downloadUrl;
-    // link.download = doc.name;
-    // document.body.appendChild(link);
-    // link.click();
-    // document.body.removeChild(link);
+    if (doc.downloadUrl && doc.downloadUrl !== '#') {
+      // Open the document in a new tab (works with Google Drive links)
+      window.open(doc.downloadUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      alert(`${doc.name} is not available for download yet. Please contact us at 8947097731.`);
+    }
   };
 
   return (
