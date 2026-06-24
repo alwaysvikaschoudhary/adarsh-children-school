@@ -216,14 +216,24 @@ const Admissions = () => {
             Get all the necessary forms and information
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all flex items-center justify-center space-x-2">
+            <a
+              href="https://drive.google.com/file/d/1yyX0s4EX20vGjoXV4KnZaNNCHk9qkv47/view?usp=share_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all flex items-center justify-center space-x-2 no-underline"
+            >
               <FaFileDownload />
               <span>Application Form</span>
-            </button>
-            <button className="bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all flex items-center justify-center space-x-2">
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1yyX0s4EX20vGjoXV4KnZaNNCHk9qkv47/view?usp=share_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-pink-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all flex items-center justify-center space-x-2 no-underline"
+            >
               <FaFileDownload />
               <span>Prospectus</span>
-            </button>
+            </a>
           </div>
         </div>
 
