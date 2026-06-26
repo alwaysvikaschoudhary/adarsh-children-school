@@ -1,5 +1,5 @@
 /**
- * Generate sitemap.xml for https://www.shreekrishnaschools.com
+ * Generate sitemap.xml for https://www.adarshchildrenseniorsecondaryschool.com
  * Run before build so each deploy gets fresh lastmod.
  * Usage: node scripts/generate-sitemap.js
  */
@@ -10,7 +10,7 @@ import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const BASE_URL = 'https://www.shreekrishnaschools.com';
+const BASE_URL = 'https://www.adarshchildrenseniorsecondaryschool.com';
 
 // lastmod in sitemap format (YYYY-MM-DD)
 const lastMod = new Date().toISOString().slice(0, 10);
