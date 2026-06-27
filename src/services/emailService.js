@@ -1,49 +1,59 @@
-import emailjs from '@emailjs/browser';
+// ============================================================
+// Email Service using Web3Forms (FREE, no account needed)
+// ============================================================
+// SETUP (1 minute):
+//
+// 1. Go to https://web3forms.com/
+// 2. Enter your email: 23365@iiitu.ac.in
+// 3. Click "Create Access Key"
+// 4. Check your email inbox for the access key
+// 5. Replace 'YOUR_ACCESS_KEY' below with the key from your email
+// ============================================================
 
-// EmailJS Configuration
-// IMPORTANT: Replace these with your actual EmailJS credentials
-// Get them from: https://www.emailjs.com/
-const EMAILJS_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-  ADMISSION_TEMPLATE_ID: 'YOUR_ADMISSION_TEMPLATE_ID', // Template for admission enquiries
-  CONTACT_TEMPLATE_ID: 'YOUR_CONTACT_TEMPLATE_ID', // Template for contact messages
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY', // Replace with your EmailJS public key
-};
-
-// Initialize EmailJS (call this once in your app)
-export const initEmailJS = () => {
-  emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
-};
+const WEB3FORMS_ACCESS_KEY = 'key'; // Replace with key from web3forms.com
 
 /**
- * Send admission enquiry email
+ * Send admission enquiry email via Web3Forms
+ * Emails will be delivered to 23365@iiitu.ac.in
  * @param {Object} formData - Form data from admission form
- * @returns {Promise} EmailJS send promise
+ * @returns {Promise} Response from Web3Forms
  */
 export const sendAdmissionEnquiry = async (formData) => {
   try {
-    // Template parameters that will be available in your email template
-    const templateParams = {
-      to_email: 'adarshchildrenschool@gmail.com', // School email
-      parent_name: formData.parentName,
-      child_name: formData.childName,
-      child_age: formData.childAge,
-      campus: formData.campus === 'acs' ? "Adarsh Children's Senior Secondary School" : "Adarsh Children's Early Years",
-      phone: formData.phone,
-      email: formData.email,
-      message: formData.message || 'No additional message',
-      enquiry_type: 'Admission Enquiry',
-      date: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
-    };
+    const campusName = formData.campus === 'acs'
+      ? "Adarsh Children's Senior Secondary School"
+      : "Adarsh Children's Early Years";
 
-    const response = await emailjs.send(
-      EMAILJS_CONFIG.SERVICE_ID,
-      EMAILJS_CONFIG.ADMISSION_TEMPLATE_ID,
-      templateParams
-    );
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `🎓 New Admission Enquiry from ${formData.parentName}`,
+        from_name: 'Adarsh School Website',
+        // Form fields
+        'Parent/Guardian Name': formData.parentName,
+        "Child's Name": formData.childName,
+        "Child's Age": formData.childAge,
+        'Preferred Campus': campusName,
+        'Phone Number': formData.phone,
+        'Email': formData.email,
+        'Message': formData.message || 'No additional message',
+        'Enquiry Type': 'Admission Enquiry',
+        'Submitted On': new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+      }),
+    });
 
-    console.log('Admission email sent successfully:', response);
-    return response;
+    const result = await response.json();
+
+    if (result.success) {
+      console.log('Admission email sent successfully:', result);
+      return result;
+    } else {
+      throw new Error(result.message || 'Failed to send email');
+    }
   } catch (error) {
     console.error('Failed to send admission email:', error);
     throw error;
@@ -51,31 +61,40 @@ export const sendAdmissionEnquiry = async (formData) => {
 };
 
 /**
- * Send contact form email
+ * Send contact form email via Web3Forms
  * @param {Object} formData - Form data from contact form
- * @returns {Promise} EmailJS send promise
+ * @returns {Promise} Response from Web3Forms
  */
 export const sendContactMessage = async (formData) => {
   try {
-    const templateParams = {
-      to_email: 'adarshchildrenschool@gmail.com',
-      from_name: formData.name,
-      from_email: formData.email,
-      phone: formData.phone,
-      subject: formData.subject,
-      message: formData.message,
-      enquiry_type: 'General Contact',
-      date: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
-    };
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `📬 New Contact Message: ${formData.subject}`,
+        from_name: 'Adarsh School Website',
+        // Form fields
+        'Name': formData.name,
+        'Email': formData.email,
+        'Phone': formData.phone,
+        'Subject': formData.subject,
+        'Message': formData.message,
+        'Enquiry Type': 'General Contact',
+        'Submitted On': new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+      }),
+    });
 
-    const response = await emailjs.send(
-      EMAILJS_CONFIG.SERVICE_ID,
-      EMAILJS_CONFIG.CONTACT_TEMPLATE_ID,
-      templateParams
-    );
+    const result = await response.json();
 
-    console.log('Contact email sent successfully:', response);
-    return response;
+    if (result.success) {
+      console.log('Contact email sent successfully:', result);
+      return result;
+    } else {
+      throw new Error(result.message || 'Failed to send email');
+    }
   } catch (error) {
     console.error('Failed to send contact email:', error);
     throw error;
@@ -87,7 +106,7 @@ export const sendContactMessage = async (formData) => {
  * This creates a WhatsApp message with form details
  */
 export const sendWhatsAppNotification = (formData, type = 'admission') => {
-  const phone = '918947097731'; // School WhatsApp number
+  const phone = '919782868120'; // School WhatsApp number
   
   let message = '';
   
@@ -115,6 +134,9 @@ export const sendWhatsAppNotification = (formData, type = 'admission') => {
   // Open WhatsApp in new tab
   window.open(whatsappUrl, '_blank');
 };
+
+// No initialization needed for Web3Forms
+export const initEmailJS = () => {};
 
 export default {
   initEmailJS,
