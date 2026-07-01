@@ -10,7 +10,7 @@
 // 5. Replace 'YOUR_ACCESS_KEY' below with the key from your email
 // ============================================================
 
-const WEB3FORMS_ACCESS_KEY = 'key'; // Replace with key from web3forms.com
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
 /**
  * Send admission enquiry email via Web3Forms
