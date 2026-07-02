@@ -30,13 +30,13 @@ const AchievementsPage = () => {
           </p>
           <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-2 md:gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="bg-white/20 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-full text-sm md:text-base">
-              <span className="font-bold">🥇 38 Gold Medals</span>
+              <span className="font-bold">🥇 8 Gold Medals</span>
             </div>
             <div className="bg-white/20 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-full text-sm md:text-base">
               <span className="font-bold">🥋 5 Black Belts</span>
             </div>
             <div className="bg-white/20 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-full text-sm md:text-base">
-              <span className="font-bold">🎖️ 25 Sports Medals</span>
+              <span className="font-bold">🎖️ 15 Sports Medals</span>
             </div>
           </div>
         </div>

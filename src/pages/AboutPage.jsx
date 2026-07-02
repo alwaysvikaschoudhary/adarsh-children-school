@@ -18,10 +18,10 @@ const AboutPage = () => {
   const [timelineRef, timelineVisible] = useScrollAnimation({ threshold: 0.1 });
   const timeline = [
     { year: "2012", event: "School Established in Bhankrota, Jaipur" },
-    { year: "2008", event: "RBSE Affiliation Received" },
+    { year: "2014", event: "RBSE Affiliation Received" },
     { year: "2016", event: "New Science Block Inaugurated" },
     { year: "2020", event: "Digital Classrooms Implemented" },
-    { year: "2024", event: "Best Principal Award - In Top 1000 Schools" },
+    { year: "2021", event: "Best Principal Award - In Top 1000 Schools" },
     { year: "2024", event: "Adarsh Children's Early Years Campus Opened" },
   ];
 

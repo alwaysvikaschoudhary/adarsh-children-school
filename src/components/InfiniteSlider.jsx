@@ -25,7 +25,7 @@ const InfiniteSlider = () => {
     },
     {
       icon: FaMedal,
-      text: "38 Gold Medals in Olympiad",
+      text: "8 Gold Medals in Olympiad",
       color: "text-orange-500",
     },
     {

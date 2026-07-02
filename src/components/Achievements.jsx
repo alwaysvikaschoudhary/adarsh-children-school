@@ -330,7 +330,7 @@ const Achievements = () => {
     },
     {
       icon: FaMedal,
-      title: "18 Gold Medals 🥇",
+      title: "8 Gold Medals 🥇",
       description: "5 in a Single Year",
       subtitle: "SOF International Olympiad",
       color: "from-blue-400 to-blue-600",
@@ -365,14 +365,14 @@ const Achievements = () => {
     {
       title: "Doctors (MBBS)",
       percentage: "Every Year",
-      students: "7-8",
+      students: "5-6",
       description: "Students entering medical fields",
       color: "bg-gradient-to-br from-red-500 to-red-700",
     },
     {
-      title: "Engineers (IIT/NIT)",
+      title: "Engineers (IIT/NIT/IIIT)",
       percentage: "Annually",
-      students: "3-5",
+      students: "3-4",
       description: "Students entering engineering",
       color: "bg-gradient-to-br from-blue-500 to-blue-700",
     },
