@@ -39,11 +39,11 @@ const About = () => {
   ];
 
   const highlights = [
-    "🥇 18 Gold Medals in a Single Year",
-    "🥋 9 Black Belts & 🎖️ 28 Medals (Single Year)",
-    "7-8 Doctors produced every year",
+    "🥇 3 Gold Medals in a Single Year",
+    "🥋 9 Black Belts & 🎖️ 8 Medals (Single Year)",
+    "7-8 Doctors produced every year", 
     "3-5 Engineers produced annually",
-    "Gold in Games for 4 consecutive years",
+    "Gold in Games for 2 consecutive years",
     "Outstanding Board Results (100% Pass)",
   ];
 
@@ -148,7 +148,7 @@ const About = () => {
               }`}
             >
               Adarsh Children's Senior Secondary School has been a beacon of
-              educational excellence in Jaipur for over 12 years. We believe in
+              educational excellence in Jaipur for over 14 years. We believe in
               holistic development, combining academic rigor with character
               building, sports, arts, and life skills.
             </p>

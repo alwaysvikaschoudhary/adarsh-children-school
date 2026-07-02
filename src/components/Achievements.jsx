@@ -415,7 +415,6 @@ const Achievements = () => {
                 {/* Text Content - Left Side */}
                 <div className="order-2 md:order-1 flex flex-col justify-center text-center md:text-left">
                   <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
-                    <FaTrophy className="text-4xl text-yellow-500" />
                     <div>
                       <h4 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">
                         🏆 Prestigious Honour
