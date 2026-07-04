@@ -39,13 +39,9 @@ const Gallery = () => {
     { url: "/images/Sports/sports_1.jpg", title: "Inter-School Cricket Match", category: "Sports" },
     { url: "/images/Sports/sports_2.png", title: "Basketball Championship", category: "Sports" },
     { url: "/images/Sports/sports_3.png", title: "Athletics Meet", category: "Sports" },
-    { url: "/images/Leaderboard/leaderboard_1.png", title: "Class 12th Topper", category: "Leaderboard" },
-    { url: "/images/Leaderboard/leaderboard_2.png", title: "Class 10th Topper", category: "Leaderboard" },
-    { url: "/images/Leaderboard/leaderboard_3.png", title: "Academic Achiever", category: "Leaderboard" },
-    { url: "/images/Leaderboard/leaderboard_4.png", title: "School Topper", category: "Leaderboard" },
   ];
 
-  const categories = ['All', 'Achievements', 'Activities', 'Campus', 'Events', 'Sports', 'Leaderboard'];
+  const categories = ['All', 'Achievements', 'Activities', 'Campus', 'Events', 'Sports'];
   const filteredImages = filter === 'All'
     ? galleryImages
     : galleryImages.filter(img => img.category === filter);
@@ -82,45 +78,6 @@ const Gallery = () => {
               {cat}
             </button>
           ))}
-        </div>
-
-        {/* Featured Slider - Mobile Optimized */}
-        <div className="mb-8 md:mb-16 animate-fade-in">
-          <Swiper
-            modules={[Autoplay, Pagination, Navigation]}
-            spaceBetween={20}
-            slidesPerView={1}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={false}
-            loop={true}
-            className="rounded-xl md:rounded-2xl overflow-hidden shadow-2xl h-64 md:h-96 lg:h-[500px]"
-          >
-            {filteredImages.slice(0, 8).map((image, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative h-full">
-                  <img
-                    src={image.url}
-                    alt={image.title}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8 text-white">
-                    <span className="bg-accent-500 px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold mb-2 inline-block">
-                      {image.category}
-                    </span>
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">{image.title}</h3>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
 
         {/* Gallery Grid - Mobile Optimized */}
@@ -188,7 +145,7 @@ const Gallery = () => {
             {filteredImages.length === 1 ? 'photo' : 'photos'}
           </p>
           <a
-            href="https://www.instagram.com/shree_krishna_publicudairamsar/"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
