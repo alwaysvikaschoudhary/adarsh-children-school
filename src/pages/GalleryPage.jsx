@@ -41,13 +41,13 @@ const GalleryPage = () => {
               <div className="grid grid-cols-3 gap-4 mb-8 max-w-md mx-auto md:mx-0">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/20 transition-all">
                   <div className="text-2xl md:text-3xl font-bold text-orange-400">
-                    47+
+                    23+
                   </div>
                   <div className="text-xs text-amber-200">Photos</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/20 transition-all">
                   <div className="text-2xl md:text-3xl font-bold text-orange-400">
-                    7
+                    5
                   </div>
                   <div className="text-xs text-amber-200">Categories</div>
                 </div>
