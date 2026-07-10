@@ -28,11 +28,11 @@ const Hero = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
-        className="w-full h-[40vh] md:h-[70vh] lg:h-[85vh] shadow-xl"
+        className="w-full aspect-[2.5/1] shadow-xl"
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full bg-gray-900">
+            <div className="relative w-full h-full">
               <img
                 src={img}
                 alt={`Leaderboard Slide ${index + 1}`}
