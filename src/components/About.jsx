@@ -119,7 +119,7 @@ const About = () => {
             {/* Floating card */}
             <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-white p-4 md:p-6 rounded-xl shadow-xl animate-float">
               <div className="text-2xl md:text-4xl font-bold text-primary-600">
-                20+
+                12+
               </div>
               <div className="text-gray-600 font-medium text-sm md:text-base">
                 Years of Excellence
