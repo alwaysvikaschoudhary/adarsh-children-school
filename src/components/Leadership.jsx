@@ -9,7 +9,7 @@ const Leadership = () => {
     {
       name: 'Mrs. Preeti Shrivastava',
       role: 'Principal',
-      image: '/images/leadership/principal-suresh-yadav.png',
+      image: '/images/leadership/principal.png',
       award: 'Best Principal Award Winner',
       organization: 'The Education Pillar of Bhankrota',
       achievement: 'Shaping values & discipline since 2012',
@@ -29,9 +29,9 @@ const Leadership = () => {
       message: '"Great stories do not begin with comfort. They begin with courage and an unshakeable belief in the power of education."'
     },
     {
-      name: 'Mr. Bhanwar Singh',
+      name: 'Mr. Kamlesh Sharma',
       role: 'Managing Director',
-      image: '/images/leadership/director.png',
+      image: '/images/leadership/managing-director.png',
       award: 'Educational Benchmark',
       organization: 'Innovation Leader',
       achievement: 'Inspiring excellence in learning',
