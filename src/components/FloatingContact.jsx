@@ -20,7 +20,7 @@ const FloatingContact = () => {
     {
       icon: FaEnvelope,
       label: 'Email',
-      href: 'mailto:adarshchildrenschool@gmail.com',
+      href: 'mailto:hemrajbhiwal@gmail.com',
       color: 'bg-blue-500 hover:bg-blue-600',
     },
   ];

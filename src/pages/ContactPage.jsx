@@ -41,7 +41,7 @@ const ContactPage = () => {
                   <div className="text-xs text-sky-200">Call Us</div>
                 </a>
                 <a
-                  href="mailto:adarshchildrenschool@gmail.com"
+                  href="mailto:hemrajbhiwal@gmail.com"
                   className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/20 transition-all group"
                 >
                   <FaEnvelope className="text-2xl mx-auto mb-1 text-sky-400 group-hover:animate-bounce" />

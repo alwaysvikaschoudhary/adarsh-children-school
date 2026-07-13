@@ -106,7 +106,7 @@ export const sendContactMessage = async (formData) => {
  * This creates a WhatsApp message with form details
  */
 export const sendWhatsAppNotification = (formData, type = 'admission') => {
-  const phone = '919782868120'; // School WhatsApp number
+  const phone = '919928283094'; // School WhatsApp number
   
   let message = '';
   

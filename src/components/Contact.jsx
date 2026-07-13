@@ -33,10 +33,10 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'Email',
-      details: ['adarshchildrenschool@gmail.com'],
+      details: ['hemrajbhiwal@gmail.com'],
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',
-      link: 'mailto:adarshchildrenschool@gmail.com',
+      link: 'mailto:hemrajbhiwal@gmail.com',
     },
     {
       icon: FaMapMarkerAlt,

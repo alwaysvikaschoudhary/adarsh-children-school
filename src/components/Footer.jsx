@@ -236,10 +236,10 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <FaEnvelope className="text-accent-400 text-base flex-shrink-0 mt-0.5" />
                 <a
-                  href="mailto:adarshchildrenschool@gmail.com"
+                  href="mailto:hemrajbhiwal@gmail.com"
                   className="text-gray-400 hover:text-white transition text-sm break-all leading-relaxed"
                 >
-                  adarshchildrenschool@gmail.com
+                  hemrajbhiwal@gmail.com
                 </a>
               </div>
             </div>
